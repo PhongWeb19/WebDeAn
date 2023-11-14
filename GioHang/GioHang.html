@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="GioHang.css">
+        <link rel="stylesheet" href="/Content/assets/css/base.css">
+        <link rel="stylesheet" href="/Content/assets/css/style.css">
+        <link rel="stylesheet" href="/Content/assets/css/style2.css">
+        <link rel="stylesheet" href="/Content/assets/css/style3.css">
+        <title>Giỏ Hàng</title>
+    </head>
+    <body>
+        <header class="header">
+            <div id="contact">
+                <p><i>Liên hệ với chúng tôi</i></p>
+            </div>
+            <div class="logo"><img src="/Content/assets/img/logo.jpg" alt="All you need"></div>
+            <form>
+                <div id="timkiem">
+                    <input id="tk" type="text" placeholder="Bạn cần tìm gì? ">
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </form>
+            <div class="select">
+                <i class="fa-solid fa-cart-shopping">
+                    <div class="giohang">
+                        <p><b>Đăng nhập</b> để xem giỏ hàng</p>
+                        <input type="submit" value="Đăng nhập" style="cursor: pointer" onclick="MoveToLogIn()">
+                    </div>
+                </i>
+
+                <i class="fa-solid fa-bell">
+                    <div class="thongbao">
+                        <p><b>Đăng nhập</b> để xem thông báo</p>
+                        <input type="submit" value="Đăng nhập" style="cursor: pointer" onclick="MoveToLogIn()"">
+                    </div>
+                </i>
+
+                <i class="fa-solid fa-user-large">
+                    <div class="taikhoan">
+                        <input type="submit" value="Đăng kí" style="cursor: pointer" onclick="MoveToSignUp()">
+                        <hr width="50%" size="2px" color="#b0a9a9" />
+                        <input type="submit" value="Đăng nhập" style="cursor: pointer" onclick="MoveToLogIn()">
+                    </div>
+                </i>
+                <!--<div class="select_thugon">
+                  <button><i class="fas fa-bars"></i></button>
+                </div>-->
+            </div>
+        </header>
+        <div class="modal__overlay"></div>
+        <nav class="content__navbar">
+            <div class="menu">
+                <h3 class="menu__heading">
+                    Danh mục sản phẩm
+                </h3>
+
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="#" class="menu-item__link ">Sản phẩm mới</a>
+                    </li>
+                    <li class="menu-item item-right menu-item-additon__vpp">
+                        <a href="#" class="menu-item__link">Văn phòng phẩm</a>
+                        <span class="right__icon-wrap">
+                            <i class=" right__icon fa-solid fa-chevron-right"></i>
+                        </span>
+                        <div class="additon__vpp">
+                            <ul class="additon__list">
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link" style="font-weight: 600;">Giấy văn phòng</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Giấy in - giấy photo</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Giấy bìa màu</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Giấy ghi chú</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Giấy decal - giấy dán nhãn</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Các loại giấy khác</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link" style="font-weight: 600;">Dụng cụ văn
+                                        phòng</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Dao rọc giấy</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Kéo văn phòng</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bấm kim - Gỡ kim</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Máy tính cầm tay</a>
+                                </li>
+                            </ul>
+                            <ul class="additon__list">
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link" style="font-weight: 600;">Bút viết</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bút chì</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bút bi</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bút lông bảng - lông dầu</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Mực bút lông bảng - lông dầu</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bút dạ quang</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link" style="font-weight: 600;">File - Bìa hồ
+                                        sơ</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bìa lá - Bìa nhiều lá</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bìa nút</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bìa nhẫn</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bìa còng</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-item__link">Sản phẩm cao cấp - Quà tặng</a>
+                    </li>
+                    <li class="menu-item item-right menu-item-additon__dcht">
+                        <a href="#" class="menu-item__link">Dụng cụ học tập</a>
+                        <span class="right__icon-wrap">
+                            <i class=" right__icon fa-solid fa-chevron-right"></i>
+                        </span>
+                        <div class="additon__dcht">
+                            <ul class="additon__list">
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link" style="font-weight: 600;">Văn phòng phẩm</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Giấy văn phòng</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bút viết</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Dụng cụ văn phòng</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">File - Bìa hồ sơ</a>
+                                </li>
+                            </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-item__link" onclick="hideElements();">Máy in - Nhãn in</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-item__link" onclick="hideElements();">Vật phẩm quảng cáo</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-item__link">Bút bi</a>
+                    </li>
+                    <li class="menu-item">
+                        <!-- <a href="#" class="menu-item__link">Xem thêm ...</a> -->
+
+                    </li>
+                </ul>
+                <!-- <div class="btn-wrap">
+                    <button id="toggleBtn">Xem thêm</button>
+                </div>
+                 -->
+            </div>
+
+            <div class="content__navbar-item">
+                <a href="#" class="content__navbar-item-link">Trang Chủ</a>
+            </div>
+            <div class="content__navbar-item">
+                <a href="#" class="content__navbar-item-link">Giới thiệu</a>
+            </div>
+            <div class="content__navbar-item">
+                <a href="#" class="content__navbar-item-link">Liên hệ</a>
+            </div>
+            <div class="content__navbar-item">
+                <a href="/DatHang/DatHang.html" class="content__navbar-item-link">Đặt hàng</a>
+            </div>
+        </nav>
+        <div id="GioHang">
+            <div id="contentGioHang">
+                <div id="left">
+                    <div id="SL">
+                        
+                    </div>
+                    <div id="SanPhamDaMua">
+                        
+                        <!-- <div class="items">
+                            <div class="img-item">
+                                <a href="#"><img src="/imgProducts/hinh1.jpg" alt=""></a>
+                            </div>
+                            <div class="infor-item">
+                                <span>Máy tính Flexoffice FLEXIO CAL-01S - Tím</span>
+                            </div>
+                            <div class="cost-item">
+                                <span>170.000đ</span>
+                            </div>
+                            <div class="count-item">
+                                <button onclick="GiamSL()">-</button>
+                                <span id="SLSP">1</span>
+                                <button onclick="TangSL()">+</button>
+                            </div>
+                        </div>
+                        <div id="costProducts">
+                            <div id="costLeft">
+                                <span><a href="">Tiếp tục mua hàng</a></span>
+                            </div>
+                            <div id="costright">
+                                <div id="TamTinh">
+                                    <span>Tạm tính: </span>
+                                    <strong>170.000đ</strong>
+                                </div>
+                                <div id="ThanhTien">
+                                    <span>Thành tiền: </span>
+                                    <strong>170.000đ</strong>
+                                </div>
+                                <div id="btnSum">
+                                    <button id="btn-sum">Thanh toán ngay</button>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>  
+                </div>
+                <div id="right">
+                    <div class="HeadThongTin">
+                        <h3 class="ThongTin">Dịch vụ khách hàng</h3>
+                        <p class="ThongTin">
+                            Bạn cần sự hỗ trợ từ chúng tôi? Hãy liên hệ ngay
+                        </p>
+                        <span class="ThongTin SDT">
+                            <i class="fa-solid fa-phone-volume icons-LienHe" ></i>
+                            <a href="" class="ThongTin" >1900 6750</a>
+                        </span>
+                        <span id="FaceBook" class="ThongTin SDT">
+                            <i class="fa-brands fa-facebook-f icons-LienHe"></i>
+                            <a href="" class="ThongTin">Chúng tôi trên Facebook</a>
+                        </span>
+                        <p class="ThongTin">Giờ mở cửa (08:00 - 18:00 tối)</p>
+                    </div>
+
+                    <div class="HeadThongTin BottomThongTin">
+                        <h3 class="ThongTin">Mua sắm cùng EVO OFFICE</h3>
+                        <div>
+                            <span class="ThongTin SDT">
+                                <img src="./img/hinh1.jpg" style="height: 25px; width: 35px;" alt="">
+                                <p>Sản phẩm đẹp, thân thiện với môi trường</p>
+                            </span>
+                            <span id="FaceBook" class="ThongTin SDT">
+                                <img src="./img/hinh1.jpg" alt="">
+                                <p>Không lo về giá</p>
+                            </span>
+                            <span style="margin-bottom: 0px;" id="FaceBook" class="ThongTin SDT">
+                                <img src="./img/hinh1.jpg" alt="">
+                                <p>Miễn phí vận chuyển</p>
+                            </span>
+                            <p style="margin: 1px 42px;;" class="ThongTin">cho đơn hàng từ 1.500.000 VNĐ</p>
+                        </div>
+                        <div id="img-ThongTin">
+                            <img src="./img/hinh2.jpg" alt="">
+                            <img src="./img/hinh3.jpg" alt="">
+                            <img src="./img/hinh4.jpg" alt="">
+                            <img src="./img/hinh5.jpg" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="GioHang.js">
+
+        </script>
+    </body>
+</html>

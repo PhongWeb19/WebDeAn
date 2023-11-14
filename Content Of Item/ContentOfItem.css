@@ -1,0 +1,316 @@
+#Background{
+    background-color: white;
+    font-size: 16px;
+}
+
+#BorderOfItem{
+    display:flex;
+    width : 80%;
+    margin: auto;
+}
+
+#ImageOfItem{
+    width: 50%;
+    /* background-color: rgb(23, 224, 250); */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px black;
+}
+
+#ImageOfItem img{
+    width: 90%;
+}
+
+#InfoOfItem{
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+}
+
+#InfoFirstContent h2{
+    line-height: 1.4;
+    margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#InfoFirstContent a
+{
+    color: #44a9d5;
+}
+
+.InfoLine{
+    display: flex;
+    
+}
+.InfoLine h5{
+    margin-top: 3px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.InfoLine a{
+    text-decoration: none;
+}
+
+#Boards{
+    display: flex;
+}
+
+#InfoItemBoard{
+    width: 60%;
+    /* background-color: rgb(23, 224, 250); */
+}
+
+#InfoItemBoard h2{
+    margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#FunctionItem{
+    width: 100%;
+    padding-right: 10px;
+    border: 1px solid #ccc;
+}
+
+.LineInfo{
+    line-height: 2;
+}
+
+#Cost{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    line-height: 60px;
+}
+
+#ChooseFavarite{
+    width: 100%;
+    height: 92px;
+    background-color: rgb(255, 255, 255);
+}
+
+#AddButton{
+    width: 100%;
+    /* height: 50px; */
+    display: flex;
+    border: 1px solid #ccc;
+}
+.Operator{
+    width: 50px;
+    text-align: center;
+    border: 0px;
+    padding: 0 20px;
+
+}
+
+.Operator:hover
+{
+    background-color: #44a9d5;
+    color: white;
+}
+
+#AddItem{
+    color: black;
+    border: 0px;
+    width: 100%;
+    border:1px solid #ccc;
+}
+
+#AddItem:hover
+{
+    background-color: #44a9d5;
+    color: white;
+}
+
+#NumberOfItem{
+    width: 70px;
+    text-align: center;
+    line-height: 50px;
+    background-color: white;
+    border: solid 1px white;
+}
+
+#InfotoContact{
+    width: 40%;
+    border: 1px solid #ccc;
+}
+#InfotoContact h4{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#InfotoContact h1{
+    text-align: center;
+    color: crimson;
+    margin-bottom: 0px;
+}
+
+#ImageContact img{
+    width: 70%;
+    height: 150px;
+    margin-left: 15%;            
+}
+#AllInfomationOfItem{
+    margin-top: 50px;
+    width:80%;
+    margin: 50px auto;
+    background-color: rgb(255, 255, 255);
+}
+
+#ButtonInfomation button{
+    width: 150px;
+    margin: 20px 10px;
+    background-color: #44a9d5;
+    border: none;
+    border-radius: 10px;
+    color : white;
+}
+
+#ButtonInfomation button:hover
+{
+    opacity: 0.7;
+}
+
+#ContentInfomation{
+    display: block;
+}
+
+#TableInfomationItem{
+    width: 50%;
+}
+
+.ColumnInfomationItem{
+    display: flex;
+}
+
+.AttributeInfomationItem{
+    width: 30%;
+    height: 40px;
+    background-color: white;
+    border: solid 1px #44a9d5;
+}
+.AttributeInfomationItem h4{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: 900;
+}
+.ContentInfomationItem{
+    width: 90%;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border: solid 1px cornflowerblue;
+}
+.ContentInfomationItem h4{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: 100;
+}
+
+#DescribeItem{
+    height: 300px;
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    margin: 0 auto;
+}
+
+#XemThem
+{
+    position: absolute;
+    bottom: 0px;
+    left: 45%;
+}
+
+#XemThem button
+{
+    border: none;
+    color: cornflowerblue;
+}
+
+#XemThem button:hover
+{
+    color:rgb(0, 94, 244);
+    cursor: pointer;
+}
+
+#DescribeItem ul
+{
+    background-image: linear-gardient(transparent,white);
+}
+
+#DescribeItem ul li{
+    line-height: 2;
+}
+
+#IllustrationDescribeItem{
+    width: 80%;
+    margin: auto;
+}
+#IllustrationDescribeItem img{
+    width: 60%;
+    height: 500px;
+    margin-left: 20%;
+
+}
+
+#IntroductionItem{
+    display: none;
+}
+
+#AllIntroductionItemInfomation{
+    border: solid 2px rgb(233, 223, 223);
+    line-height: 1.6;
+    padding: 10px 10px;
+}
+
+.AllIntroductionItemInfomation h4{
+    font-weight: normal;
+}
+
+#RelatedItem{
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 100px;
+}
+
+#RelatedItemTitle{
+    text-align: center;
+}
+
+#RelatedItemLine{
+    width: 80%;
+    height: 250px;
+    background-color: white;
+    margin-left: 10%;
+}
+
+.RelatedItemBox{
+    width: 25%;
+    height: 100%;
+    margin: 0 10px;
+}
+
+.RelatedItem img{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#RelatedItemLine{
+    display: flex;
+}
+
+.RelatedItemInfo{
+    background-color: rgb(23, 224, 250);
+    text-align: center;
+}
+
+.RelatedItemInfo h2{
+    font-size: 16px;
+}

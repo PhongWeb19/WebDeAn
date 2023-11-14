@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>TaiKhoan</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="form-left" >
+            <div class="quyenloi">
+                 <span class="quyenloi dam">QUYỀN LỢI THÀNH VIÊN</span> 
+                <p>Mua hàng khắp thế giới cực kì dễ dàng và nhanh chóng</p>
+                <p>Theo dõi chi tiết đơn hàng, địa chỉ thanh toán dễ dàng </p>
+                <p>Nhận nhiều chương trình ưu đãi hấp dẫn từ chúng tôi</p>
+            </div>
+           
+        </div>
+        <div id="form-right">
+        <div class="head">
+            <div id="left" onclick="hienthidangnhap()">Đăng nhập</div>
+            <div id="right" onclick="hienthidangky()">Đăng ký</div>
+        </div>
+        <form action="" id="dangnhap" >
+            <div class="content">
+                <div class="contentmail">
+                    <div class="contentmail indam">EMAIL<span>*</span></div>
+                    <input type="text" name="tendn" id="email" placeholder="Nhập Địa chỉ Email" onkeypress="keypress()">
+                    <div id="hienthitbemail"></div>
+                </div>
+                <div class="contentpassword">
+                    <div class="contentmail indam">MẬT KHẨU<span>*</span></div>
+                    <input type="password" name="matkhau" id="password" placeholder="Nhập Mật khẩu" onkeypress="keypress1()">
+                    <div id="hienthitbmk"></div>
+                </div>
+            </div>
+            <div id="remember" onclick="hienthiremember()">Quên mật khẩu?</div>
+            <button type="button" onclick="ktdn()">ĐĂNG NHẬP</button>
+            <div id="baomat">
+             Evo Office cam kết bảo mật và sẽ không bao giờ đăng
+                hay chia sẻ thông tin mà chưa có được sự đồng ý của bạn. 
+            </div>
+        </form>
+        <form action="" id="dangky">
+            <div>
+                <div class="ho">
+                    <div>HỌ<span>*</span></div>
+                    <input type="text" name="ho" id="fisrtname" placeholder="Nhập họ" onkeypress="keypress2()">
+                    <div id="hienthitbho"></div>
+                </div>
+                <div class="ten">
+                    <div>TÊN<span>*</span></div>
+                    <input type="text" name="ten" id="lastname" placeholder="Nhập tên" onkeypress="keypress3()">
+                    <div id="hienthitbten"></div>
+                </div>
+                <div class="ten">
+                    <div>SỐ ĐIỆN THOẠI<span>*</span></div>
+                    <input type="text" name="sodt" id="phone" placeholder="Nhập số điện thoại" onkeypress="keypress4()">
+                    <div id="hienthitbphone"></div>
+                </div>
+                <div class="ten">
+                    <div>EMAIL<span>*</span></div>
+                    <input type="text" name="e" id="email" placeholder="Nhập địa chỉ email" onkeypress="keypress1()">
+                    <div id="hienthitbemail"></div>
+                </div>
+                <div class="ten" >
+                    <div>MẬT KHẨU<span>*</span></div>
+                    <input type="password" name="matkhau" id="password" placeholder="Nhập mật khẩu">
+                    <div id="hienthitbmk"></div>
+                </div>
+                <div class="ten">
+                    <div>MẬT KHẨU<span>*</span></div>
+                    <input type="password" name="matkhau" id="password" placeholder="Nhập lại mật khẩu">
+                </div>
+            </div>
+            <button type="button" onclick="ktdk()">TẠO TÀI KHOẢN</button>
+        </form>
+        <form action="" id="form-remember">
+            <div class="quenmk">
+                Bạn quên mật khẩu? Nhập địa chỉ email để lấy lại mật khẩu qua email.
+            </div>
+            <div class="spanemail">EMAIL<span>*</span></div>
+            <div><input type="text" name="" id="email" placeholder="Nhập địa chỉ Email"></div>
+            <button type="button">LẤY LẠI MẬT KHẨU</button>
+            <p class="quaylai">QUAY LẠI <span onclick="hienthitaiday()"> TẠI ĐÂY</span></p>
+        </form>
+        <div class="line">
+            <span>Hoặc đăng nhập qua</span>
+        </div>
+        <div id="footer">
+            <div id="fleft"><img width="129px" height="37px" src="fb-btn.jpg" alt="">
+            </div>
+            <div id="fright"><img width="129px" height="37px" src="gp-btn.jpg" alt="">
+        </div>
+        </div>
+        
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

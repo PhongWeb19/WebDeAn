@@ -1,0 +1,91 @@
+#Border{
+    width: 95%;
+    margin: auto;
+    display: flex;
+}
+
+#List{
+    width: 65%;
+    height: 700px;
+    background-color: white;
+    text-align: center;
+    border : solid 1px black;
+    margin-top: 20px;
+}
+
+#Form{
+    width: 35%;
+    height: 250px;
+    margin-left: 50px;
+    margin-top: 20px;
+    text-align: center;
+    border : solid 1px black
+}
+
+.Line{
+    width: 95%;
+    margin-left: 2.5%;
+    display: flex;
+    border: solid 1px black;
+    line-height: 30px;
+}
+
+.Title{
+    background-color: cornflowerblue;
+}
+
+.Title h3{
+    margin: 0;
+}
+
+.Attribute1{
+    width: 15%;
+    height: 30px;
+    border-right: solid 0.5px black;
+}
+
+.Attribute2{
+    width: 40%;
+    height: 30px;
+    border-right: solid 0.5px black;
+}
+
+.Attribute3{
+    width: 30%;
+    height: 30px;
+    border-right: solid 0.5px black;
+}
+
+.Attribute4{
+    width: 15%;
+    height: 30px;
+}
+
+.LineForm{
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+#UserName{
+    
+}
+
+#InputUserName input{
+    text-align: left;
+    margin-left: 10px;
+    width: 60%;
+}
+
+#FindButton{
+    width: 60px;
+    height: 25px;
+}
+
+
+#Status select{
+    width: 200px;
+    height: 25px;
+}
+
+

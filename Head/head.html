@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel='shortcut icon' href='C:\Study\web\Do_An_Web\hinhanh\iconweb.ico' />
+      <title>All you need</title>
+      <link rel="stylesheet" href="head.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      
+    </head>
+    <body>
+       <div id="head">
+            <div id="head_contact" ><p><i>Liên hệ với chúng tôi</i></p></div>
+            <div id="head_logo"><img src="C:\Study\web\Do_An_Web\hinhanh\logo web.png" alt="All you need" ></div>
+            <form name="form_timkiem" id="id_form_timkiem" onsubmit="userSubmit_EnterSearch()">
+            <div id="head_timkiem">
+                <input id="head_timkiem_idkhungtimkiem"  type="text" placeholder="Bạn cần tìm gì? " oninput="clickOnSearch()" >
+                <button  type="submit" name="head_timkiem_button_submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <div id="head_timkiem_result">
+                    <span id="head_timkiem_result_wrap"></span>
+                </div>
+            </div>
+            </form>
+            <div id="head_select">
+                <i class="fa-solid fa-cart-shopping" >
+                <div class="head_select_i_giohang">
+                    <form name="chuadangnhap1">
+                    <p><b>Đăng nhập</b> để xem giỏ hàng</p>
+                    <input type='submit' name="dangnhapordangki" value='Đăng nhập' style='cursor: pointer'>
+                    </form>
+                </div>
+                <span class="head_select_i_soluong" >0</span>
+                </i>
+
+                <i class="fa-solid fa-bell">
+                <div class="head_select_i_thongbao" >
+                    <form name="chuadangnhap2">
+                    <p><b>Đăng nhập</b> để xem thông báo</p>
+                    <input type="submit" name="dangnhapordangki" value="Đăng nhập" style="cursor: pointer">
+                    </form>
+                    <!--<span><i class="fa-regular fa-circle"></i><span>tim kiem 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. fnkaeshfds  hghan gahfjahfjdhjhafghjfh gjhgjkhgfjgheriuhfdk h </span></span>-->
+                </div>
+                <!--<span class="head_select_i_soluong">0</span>-->
+                </i>
+              
+                <i class="fa-solid fa-user-large">
+                <div class="head_select_i_taikhoan">
+                    <form name="chuadangnhap3">
+                    <input type="submit" name="dangnhapordangki" value="Đăng kí" style="cursor: pointer"> 
+                    <hr width="50%" size="2px" color="#b0a9a9"/>
+                    <input type="submit" name="dangnhapordangki" value="Đăng nhập" style="cursor: pointer">
+                    </form>
+                </div>
+                </i>
+                    
+                <i class="fa-solid fa-bars">
+                    <div id="head_select_i_selectthugon">
+                        <ul>
+                            <li><i class="fa-solid fa-user-large"></i><span>Tài khoản</span></li>
+                            <li><i class="fa-solid fa-bell"></i><span>Thông báo</span></li>
+                            <li><i class="fa-solid fa-cart-shopping" ></i><span>Giỏ hàng</span></li>
+                        </ul>
+                    </div>
+                </i>
+            </div>
+        
+        <div id="list_sanpham" style="display:flex;justify-content:space-around;"></div>
+        <!--<span id="loctimkiem"><br>Tìm kiếm theo<br>
+            <span>giá tiền<input type="checkbox" class="serchNangcao" value="byprice" onclick="searchNangcao('byprice')"></span>
+            <span>khoảng giá tiền<input type="checkbox" class="serchNangcao" value="bypricerange" onclick="searchNangcao('bypricerange')"></span>
+            <span>loại hàng<input type="checkbox" class="serchNangcao" value="bytype" onclick="searchNangcao('bytype')"></span>
+        </span>-->
+        <div id="ketquatimkiem" style="display:flex;justify-content:space-around;"></div>
+        <script type="text/javascript" src="head.js"></script>
+        
+    </body>
+</html>
+
+<!--
+    
+    sau khi dang nhap va chua mua hang thi ben trong div cua head_select_i_giohang inner:
+<img src="C:\Study\web\Do_An_Web\hinh anh\no_cart.png" width="100%" height="auto">
+<p style="margin:0 auto 10px auto;padding-top:0;">Giỏ hàng đang trống</p>
+    sau khi dang nhap va chua co thong bao thi ben trong div cua .thongbao inner:
+<img src="C:\Study\web\Do_An_Web\hinh anh\no_thongbao.jpg" width="100%" height="auto">
+<p style="margin:0 auto 10px auto;padding-top:0;">Không có thông báo</p>
+    sau khi dang nhap thi ben trong div cua .taikhoan inner:
+<span><i class="fa-regular fa-user"></i><p>//là tên account</p></span>
+                    <span><ul>
+                        <li>Thông tin tài khoản</li>
+                        <li>Đơn hàng</li>
+                        <li>Đổi mật khẩu</li>
+                        <li>Đăng xuất</li>
+                    </ul></span>
+        css:
+    .select .taikhoan{
+    width:250px;
+}
+.taikhoan span:first-child{
+    display: flex;
+    width:100%;
+    border-bottom: 2px solid #b0a9a9;
+    padding:0 0 0 10px;
+}
+.select .taikhoan i
+{
+  margin-top:10px;
+  border: 1.5px solid #b0a9a9;
+  transform: translateY(-25%);
+  padding:2%;
+}
+.select .taikhoan i:hover{
+    cursor: default;
+    color:#44a9d5;
+}
+.select .taikhoan p
+{
+    margin-top:10px;
+    padding:0 0 0 5px;
+   
+}
+.select .taikhoan ul
+{
+  list-style-image: url('https://img.icons8.com/metro/16/000000/pin.png') ;
+  list-style-position: inside;
+  margin:15px 0 8px 0;
+  border-left:2px solid #b0a9a9;
+}
+.select .taikhoan ul li
+{
+  padding:7px;
+}
+.select .taikhoan ul li:hover{
+    cursor: pointer;
+    padding-bottom:12px;
+    color: black;
+    transform:scale(1.1);
+    transition: 0.2s 0.1s linear;
+
+}
+
+
+
+
+
+
+
+
+
+-->

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Sach Don Hang</title>
+    <link rel="stylesheet" href="/Content Of Item/ContentOfItem.css">
+</head>
+<body>
+    <div id = "Border">
+        <div id = "List">
+            <h2>DANH SÁCH ĐƠN HÀNG</h2>
+            <div class = "Line">
+                <div class = "Attribute1 Title"><h3>Ngày</h3></div>
+                <div class = "Attribute2 Title"><h3>Tên Khách Hàng</h3></div>
+                <div class = "Attribute3 Title"><h3>Giá</h3></div>
+                <div class = "Attribute4 Title"><h3>Trạng Thái</h3></div>
+            </div>
+                
+            <div id = "Attribute">
+                <div class = "Line">
+                    <div class = "Attribute1">11-11-2023</div>
+                    <div class = "Attribute2">Phat 1</div>
+                    <div class = "Attribute3">1111</div>
+                    <div class = "Attribute4">Chưa xử lí</div>
+                </div>
+    
+                <div class = "Line">
+                    <div class = "Attribute1">11-11-2023</div>
+                    <div class = "Attribute2">Phat 2</div>
+                    <div class = "Attribute3">1111</div>
+                    <div class = "Attribute4">Đã xử lí</div>
+                </div>
+
+                <div class = "Line">
+                    <div class = "Attribute1">1-1-2022</div>
+                    <div class = "Attribute2">Phat 3</div>
+                    <div class = "Attribute3">2222</div>
+                    <div class = "Attribute4">Chưa xử lí</div>
+                </div>
+
+                <div class = "Line">
+                    <div class = "Attribute1">22-11-2023</div>
+                    <div class = "Attribute2">Phat 3</div>
+                    <div class = "Attribute3">3333</div>
+                    <div class = "Attribute4">Đã xử lí</div>
+                </div>
+
+                <div class = "Line">
+                    <div class = "Attribute1">10-5-2023</div>
+                    <div class = "Attribute2">Phat 4</div>
+                    <div class = "Attribute3">4444</div>
+                    <div class = "Attribute4">Đã xử lí</div>
+                </div>
+    
+            </div>
+            
+        </div>
+        <div id = "Form">
+            <h2>TÌM kIẾM</h2>
+            <div class = "LineForm" id="UserName">Tên Khách Hàng</div>
+            <div id="InputUserName"><input type="text" id="TextUserName"></div>
+            <div class = "LineForm" id="Date">Ngày</div>
+            <div id="InputUserName"><input type="date" id = "DateInfomation"></div>
+            <div class = "LineForm" id="Status">Trạng Thái
+                <select name="" id="SelectOption">
+                    <option value=""></option>
+                    <option value="Chưa xử lí">Chưa xử lí</option>
+                    <option value="Đã xử lí">Đã xử lí</option>
+                </select>
+            </div>
+            <div class = "LineForm" id="Date"><input type="button" name="" id="FindButton" value="Tìm" onclick="Find()"></div>
+        </div>
+    </div>
+    <script src="/Content Of Item/ContentOfItem.js">
+        
+    </script>
+</body>
+</html>

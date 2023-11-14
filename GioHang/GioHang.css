@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#GioHang
+{
+    font-size: 16px;
+    height: 45px;
+    background-color: #ccc;
+}
+
+#GioHang #HeadGioHang
+{
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+}
+#GioHang #HeadGioHang p,
+#GioHang #HeadGioHang a
+{
+    padding: 0 5px;
+    line-height: 45px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+#GioHang #HeadGioHang p
+{
+    color: #44a9d5;
+}
+
+#GioHang #HeadGioHang a:hover
+{
+    color: #44a9d5;
+}
+
+#GioHang #contentGioHang
+{
+    width: 90%;
+    margin-left: auto;
+    display: flex;
+}
+
+#GioHang #contentGioHang #left
+{
+    width: 60%;
+    height: 500px;
+    /* background-color: #44a9d5; */
+}
+
+#GioHang #contentGioHang #right
+{
+    width: 40%;
+    height: 500px;
+    /* background-color: aqua; */
+}
+
+#SanPhamDaMua #content-right #infor-items
+{
+    text-align: center;
+}
+
+#SanPhamDaMua #infor-items
+{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+#SanPhamDaMua #infor-items span
+{
+    padding: 10px 20px;
+    margin: 0 20px;
+    background-color: #ccc; 
+}
+
+#SanPhamDaMua #costProducts 
+{
+    text-align: right;
+    margin-right: 20px;
+}
+
+#SanPhamDaMua #costProducts span
+{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#SanPhamDaMua #costProducts span strong
+{
+    color:#f26c4f;
+    padding: 0 5px;
+}
+
+#GioHang #left #SL
+{
+    margin: 14px 0;
+    display: flex;
+}
+
+
+#GioHang #left #SL h1
+{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#GioHang #left #SL span
+{
+    margin-left: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#GioHang #left #SanPhamDaMua
+{
+    text-align: center;
+    margin: 50px 0;
+}
+
+#GioHang #left #SanPhamDaMua .icon-SanPhamDaMua
+{
+    width: 50%;
+    height: 50%;
+    font-size: 200px;
+    opacity: 0.4;
+    margin-bottom: 30px;
+}
+
+#GioHang #left #SanPhamDaMua #continues
+{
+    padding: 20px 100px;
+    font-size: 16px;
+    border: none;
+    background-color: #2a90bc;
+    color: white;
+    text-transform: uppercase;
+}
+
+#GioHang #left #SanPhamDaMua #continues:hover
+{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#GioHang #left #SanPhamDaMua #btn-sum
+{
+    display: block;
+    margin: 0 auto;
+    padding: 14px 25px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #44a9d5;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+}
+
+#GioHang #left #SanPhamDaMua #btn-sum:hover
+{
+    background-color: #2a90bc;
+    cursor: pointer;
+}
+
+#SanPhamDaMua  .items
+{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+#SanPhamDaMua .items .infor-item
+{
+    margin-top: calc(50% - 20%);
+}
+
+#SanPhamDaMua .items .infor-item div
+{
+    text-align: left;
+}
+
+#SanPhamDaMua .items .infor-item strong
+{
+    font-weight: 300;
+}
+
+#SanPhamDaMua .items .infor-item strong:hover
+{
+    color:#2a90bc;
+    cursor: pointer;
+}
+
+#SanPhamDaMua .items .img-item,
+#SanPhamDaMua .items .cost-item,
+#SanPhamDaMua .items .count-item
+{
+    margin: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#DatHSanPhamDaMua .items .img-item
+{
+    text-align: center;
+}
+
+#SanPhamDaMua .items .img-item img
+{
+    height: 120px;
+    border: 1px solid black;
+    border-radius: 24px;
+    padding:5px;
+}
+
+#SanPhamDaMua .items .cost-item
+{
+    text-align: center;
+    color:#f26c4f;
+}
+
+#SanPhamDaMua .items .count-item
+{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* #SanPhamDaMua .items .count-item input
+{
+    border: 1px solid black;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 80px;
+    width: 95px;
+    outline: none;
+} */
+
+#SanPhamDaMua .items .count-item span
+{
+    border: 1px solid black;
+    padding: 0 10px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+}
+
+#SanPhamDaMua .items .count-item button
+{
+    padding: 0 10px;
+    border: 1px solid black;
+    height: 26px;
+    line-height: 26px;
+}
+
+#SanPhamDaMua .items .count-item button:hover
+{
+    cursor: pointer;
+}
+
+#right .HeadThongTin
+{
+    border: 1px solid #ccc;
+    width: 60%;
+    margin: 30px 0;
+}
+
+#right .HeadThongTin .ThongTin
+{
+    margin: 25px 8px;
+    color: #b3b3b3;
+}
+
+#right .HeadThongTin h3
+{
+    font-weight: 600;
+    font-size: 17px;
+    color: black !important;
+}
+
+#right .HeadThongTin span
+{
+    display: block;
+}
+
+#right .HeadThongTin .icons-LienHe
+{
+    font-size: 25px;
+}
+
+#right .HeadThongTin span a
+{
+    text-decoration: none;
+}
+
+#right .HeadThongTin .SDT:hover i,
+#right .HeadThongTin .SDT:hover a
+{
+    color:#2a90bc;
+}
+
+#right .BottomThongTin .ThongTin
+{
+    display: flex;
+    color: black;
+}
+
+#right .BottomThongTin :last-child
+{
+    margin-bottom: 0;
+}
+
+#right .BottomThongTin #img-ThongTin
+{
+    margin: 10px 20px;
+}
+
+#right .BottomThongTin #img-ThongTin img
+{
+    width: 60px;
+    height: 40px;
+}
+
+#SanPhamDaMua #costProducts
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#SanPhamDaMua #costProducts #costLeft a
+{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#SanPhamDaMua #costProducts #costLeft a:hover
+{
+    color:#2a90bc;
+}
+
+#SanPhamDaMua #TamTinh,
+#SanPhamDaMua #ThanhTien
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+#SanPhamDaMua #ThanhTien strong
+{
+    color:#f26c4f;
+    font-size: 24px;
+}
+
+#SanPhamDaMua #costright
+{
+    width: 50%;
+}
+#SanPhamDaMua #costright span
+{
+    font-size: 16px;
+    font-weight: 300;
+}
+

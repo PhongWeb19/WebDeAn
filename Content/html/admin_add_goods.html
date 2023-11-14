@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/vd/DoAn/assets/css/base.css">
+    <link rel="stylesheet" href="/vd/DoAn/assets/css/style3.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+
+    <title>DoAn</title>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <div class="main-left">
+                <h2 class="list__name">DANH SACH SAN PHAM</h2>
+                <div class="list__title-wrapper">
+                    <ul class="list__title">
+                        <li class="list__item stt">
+                            <h5>Stt</h5>
+                        </li>
+                        <li class="list__item hinh">
+                            <h5>Hinh</h5>
+                        </li>
+                        <li class="list__item ten">
+                            <h5>Ten</h5>
+                        </li>
+                        <li class="list__item thuongHieu">
+                            <h5>Thuong hieu</h5>
+                        </li>
+                        <li class="list__item loai">
+                            <h5>Loai</h5>
+                        </li>
+                        <li class="list__item gia">
+                            <h5>Gia</h5>
+                        </li>
+                        <li class="list__item giamGiam">
+                            <h5>Giam Gia</h5>
+                        </li>
+                        <li class="list__item no-value"></li>
+                    </ul>
+                </div>
+                <div class="list__goods-wrapper" id="list-goods">
+                    <!-- <ul class="list__title" >
+                        <li class="list__item stt"><i>1</i></li>
+                        <li class="list__item hinh">
+                            <div class="goods-img" style="background-image: url(/vd/DoAn/assets/img/product1.jpeg);"></div>
+                        </li>
+                        <li class="list__item goods-item ten">Cascacacaca</li>
+                        <li class="list__item goods-item thuongHieu">âccacaca</li>
+                        <li class="list__item goods-item loai">sasfasfafasfafafasf</li>
+                        <li class="list__item goods-item gia">dqdqdq</li>
+                        <li class="list__item goods-item giamGiam">dqdqdq</li>
+                        <li class="list__item goods-item no-value">
+                            <button class="btn-goods" id="btnSua1">Sua</button>
+                            <button class="btn-goods" id="btnXoa1">X</button>
+                        </li>
+                    </ul> -->
+                </div>
+                <ul class="pagination home-product__pagination hidden">
+                    <li class="pagination-item">
+                        <span class="pagination-button btn-prev button--ative">
+                            <i class="pagination-item__icon fa-solid fa-angles-left"></i>
+                        </span>
+                    </li>
+                    <div id="number-page" class="number-page">
+                        <!-- <li class="pagination-item pagination-item--active">
+                            <a href="#" class="pagination-item__link">1</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#" class="pagination-item__link">2</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#" class="pagination-item__link">3</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#" class="pagination-item__link">...</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#" class="pagination-item__link">9</a>
+                        </li> -->
+                    </div>
+
+                    <li class="pagination-item">
+                        <span class="pagination-button btn-next">
+                            <i class="pagination-item__icon fa-solid fa-angles-right"></i>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-right">
+                <div class="main-right-top">
+                    <h2 class="search__name">TIM KIEM SAN PHAM</h2>
+                    <div class="search">
+                        <input type="text" class="search__input" placeholder="Tìm kiếm san pham">
+                        <span class="search-with-icon">
+                            <i class="search__icon fa-solid fa-magnifying-glass"></i>
+                        </span>
+                    </div>
+                    <div class="select">
+                        <label for="select__brand-name" class="select__name">Thuong hieu</label>
+                        <select name="chonpt" class="select-input" id="select__brand-name">
+                            <option value="Chon thuong hieu">Chon thuong hieu</option>
+                            <option value="Deli">Deli</option>
+                            <option value="Evo office">Evo office</option>
+                            <option value="Thiên Long">Thiên Long</option>
+                            <option value="Idea">Idea</option>
+                            <option value="OEM">OEM</option>
+                            <option value="Xukiva">Xukiva</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <label for="select__sector-name" class="select__name">Loai</label>
+                        <select name="chonptt" class="select-input" id="select__sector-name">
+                            <option value="Chon thuong hieu">Chon thuong hieu</option>
+                            <option value="Bấm kim">Bấm kim</option>
+                            <option value="Bảng vẽ">Bảng vẽ</option>
+                            <option value="Bìa lỗ">Bìa lỗ</option>
+                            <option value="Bút bi">Bút bi</option>
+                            <option value="Bút dạ">Bút dạ</option>
+                            <option value="Bút lông dầu">Bút lông dầu</option>
+                            <option value="Bút lông kim">Bút lông kim</option>
+                            <option value="Dao rọc giấy">Dao rọc giấy</option>
+                            <option value="Giấy">Giấy</option>
+                            <option value="Máy tính">Máy tính</option>
+                            <option value="Ngăn tài liệu">Ngăn tài liệu</option>
+                            <option value="Sách tư duy - Kỹ năng sống">Sách tư duy - Kỹ năng sống</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                
+                <div class="main-right-bottom">
+                    <h2 class="search__name">THEM SAN PHAM</h2>
+                    <div class="add__goods-wrap">
+                        <label for="Nhap ten san pham" class="select__name">Nhap ten san pham</label>
+                        <div class="search addid">
+                            <input type="text" class="search__input" placeholder="Nhap ten san pham" id="Nhap ten san pham">
+                        </div>
+                    </div>
+                    <div class="select">
+                        <label for="select__brand-name" class="select__name">Thuong hieu</label>
+                        <select name="chonpt" class="select-input" id="select__brand-name">
+                            <option value="Chon thuong hieu">Chon thuong hieu</option>
+                            <option value="Deli">Deli</option>
+                            <option value="Evo office">Evo office</option>
+                            <option value="Thiên Long">Thiên Long</option>
+                            <option value="Idea">Idea</option>
+                            <option value="OEM">OEM</option>
+                            <option value="Xukiva">Xukiva</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <label for="select__sector-name" class="select__name">Loai</label>
+                        <select name="chonptt" class="select-input" id="select__sector-name">
+                            <option value="Chon thuong hieu">Chon thuong hieu</option>
+                            <option value="Bấm kim">Bấm kim</option>
+                            <option value="Bảng vẽ">Bảng vẽ</option>
+                            <option value="Bìa lỗ">Bìa lỗ</option>
+                            <option value="Bút bi">Bút bi</option>
+                            <option value="Bút dạ">Bút dạ</option>
+                            <option value="Bút lông dầu">Bút lông dầu</option>
+                            <option value="Bút lông kim">Bút lông kim</option>
+                            <option value="Dao rọc giấy">Dao rọc giấy</option>
+                            <option value="Giấy">Giấy</option>
+                            <option value="Máy tính">Máy tính</option>
+                            <option value="Ngăn tài liệu">Ngăn tài liệu</option>
+                            <option value="Sách tư duy - Kỹ năng sống">Sách tư duy - Kỹ năng sống</option>
+                        </select>
+                    </div>
+                    <div class="add__img-goods select">
+                        <label for="file-img" class="select__name">Them anh</label>
+                        <input type="file" name="" id="file-img">
+                    </div>
+                    <div class="add__goods-wrap">
+                        <label for="Nhap gia san pham" class="select__name">Nhap gia san pham</label>
+                        <div class="search addid">
+                            <input type="text" class="search__input" placeholder="Nhap gia san pham" id="Nhap gia san pham">
+                        </div>
+                    </div>
+                    <div class="add__goods-wrap">
+                        <label for="Nhap % giam gia" class="select__name">Nhap % giam gia</label>
+                        <div class="search addid">
+                            <input type="text" class="search__input" placeholder="Nhap % giam gia" id="Nhap % giam gia">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/vd/DoAn/assets/js/main1.js"></script>
+</html>

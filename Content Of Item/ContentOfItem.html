@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContentOfItem</title>
+    <link rel="stylesheet" href="ContentOfItem.css">
+    <link rel="stylesheet" href="/Content/assets/css/base.css">
+    <link rel="stylesheet" href="/Content/assets/css/style.css">
+    <link rel="stylesheet" href="/Content/assets/css/style2.css">
+    <link rel="stylesheet" href="/Content/assets/css/style3.css">
+    <style>
+        
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div id="contact">
+            <p><i>Liên hệ với chúng tôi</i></p>
+        </div>
+        <div class="logo"><img src="/Content/assets/img/logo.jpg" alt="All you need"></div>
+        <form>
+            <div id="timkiem">
+                <input id="tk" type="text" placeholder="Bạn cần tìm gì? ">
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </form>
+        <div class="select">
+            <i class="fa-solid fa-cart-shopping">
+                <div class="giohang">
+                    <p><b>Đăng nhập</b> để xem giỏ hàng</p>
+                    <input type="submit" value="Đăng nhập" style="cursor: pointer" onclick="MoveToLogIn()">
+                </div>
+            </i>
+
+            <i class="fa-solid fa-bell">
+                <div class="thongbao">
+                    <p><b>Đăng nhập</b> để xem thông báo</p>
+                    <input type="submit" value="Đăng nhập" style="cursor: pointer" onclick="MoveToLogIn()"">
+                </div>
+            </i>
+
+            <i class="fa-solid fa-user-large">
+                <div class="taikhoan">
+                    <input type="submit" value="Đăng kí" style="cursor: pointer" onclick="MoveToSignUp()">
+                    <hr width="50%" size="2px" color="#b0a9a9" />
+                    <input type="submit" value="Đăng nhập" style="cursor: pointer" onclick="MoveToLogIn()">
+                </div>
+            </i>
+            <!--<div class="select_thugon">
+              <button><i class="fas fa-bars"></i></button>
+            </div>-->
+        </div>
+    </header>
+    <div class="modal__overlay"></div>
+        <nav class="content__navbar">
+            <div class="menu">
+                <h3 class="menu__heading">
+                    Danh mục sản phẩm
+                </h3>
+
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="#" class="menu-item__link ">Sản phẩm mới</a>
+                    </li>
+                    <li class="menu-item item-right menu-item-additon__vpp">
+                        <a href="#" class="menu-item__link">Văn phòng phẩm</a>
+                        <span class="right__icon-wrap">
+                            <i class=" right__icon fa-solid fa-chevron-right"></i>
+                        </span>
+                        <div class="additon__vpp">
+                            <ul class="additon__list">
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link" style="font-weight: 600;">Giấy văn phòng</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Giấy in - giấy photo</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Giấy bìa màu</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Giấy ghi chú</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Giấy decal - giấy dán nhãn</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Các loại giấy khác</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link" style="font-weight: 600;">Dụng cụ văn
+                                        phòng</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Dao rọc giấy</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Kéo văn phòng</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bấm kim - Gỡ kim</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Máy tính cầm tay</a>
+                                </li>
+                            </ul>
+                            <ul class="additon__list">
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link" style="font-weight: 600;">Bút viết</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bút chì</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bút bi</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bút lông bảng - lông dầu</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Mực bút lông bảng - lông dầu</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bút dạ quang</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link" style="font-weight: 600;">File - Bìa hồ
+                                        sơ</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bìa lá - Bìa nhiều lá</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bìa nút</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bìa nhẫn</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bìa còng</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-item__link">Sản phẩm cao cấp - Quà tặng</a>
+                    </li>
+                    <li class="menu-item item-right menu-item-additon__dcht">
+                        <a href="#" class="menu-item__link">Dụng cụ học tập</a>
+                        <span class="right__icon-wrap">
+                            <i class=" right__icon fa-solid fa-chevron-right"></i>
+                        </span>
+                        <div class="additon__dcht">
+                            <ul class="additon__list">
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link" style="font-weight: 600;">Văn phòng phẩm</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Giấy văn phòng</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bút viết</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Dụng cụ văn phòng</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">File - Bìa hồ sơ</a>
+                                </li>
+                            </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-item__link" onclick="hideElements();">Máy in - Nhãn in</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-item__link" onclick="hideElements();">Vật phẩm quảng cáo</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-item__link">Bút bi</a>
+                    </li>
+                    <li class="menu-item">
+                        <!-- <a href="#" class="menu-item__link">Xem thêm ...</a> -->
+
+                    </li>
+                </ul>
+                <!-- <div class="btn-wrap">
+                    <button id="toggleBtn">Xem thêm</button>
+                </div>
+                 -->
+            </div>
+
+            <div class="content__navbar-item">
+                <a href="/Content/html/index.html" class="content__navbar-item-link">Trang Chủ</a>
+            </div>
+            <div class="content__navbar-item">
+                <a href="#" class="content__navbar-item-link">Giới thiệu</a>
+            </div>
+            <div class="content__navbar-item">
+                <a href="#" class="content__navbar-item-link">Liên hệ</a>
+            </div>
+            <div class="content__navbar-item">
+                <a href="/DatHang/DatHang.html" class="content__navbar-item-link">Đặt hàng</a>
+            </div>
+        </nav>
+    <div id="Background">
+        <div id = BorderOfItem>
+            <!-- <div id = "ImageOfItem"><img src="/Content Of Item/imgItems/may tinh tay.webp" alt=""></div>
+            <div id="InfoOfItem"> -->
+
+                <!-- <div id = "InfoFirstContent">
+                    <h2>Máy tính Flexoffice FLEXIO CAL-01S</h2>
+                    <div class = "InfoLine">
+                        <h5>Mã sản phẩm: </h5>
+                        <a href="">(Đang cập nhật...)</a>
+                    </div>
+                    <div class = "InfoLine">
+                        <h5>Thương hiệu: </h5>
+                        <a href="">Thiên Long</a>
+                    </div>
+                    <div class = "InfoLine">
+                        <h5>Tình trạng: </h5>
+                        <a href="">Còn hàng</a>
+                    </div>
+                </div> -->
+                
+
+                <!-- <div id = "Boards">
+                    <div id = "InfoItemBoard">
+                        <div id="FunctionItem">
+                            <ul>
+                                <li class="LineInfo">Sản phẩm được thiết kế nhỏ gọn, vừa tay cầm tạo cảm giác thoải mái, chắc chắn và thuận tiện khi sử dụng.</li>
+                                <li class="LineInfo">Các phím bấm được thiết kế rộng, làm từ nhựa ABS giúp thao tác nhanh và chính xác.</li>
+                            </ul>
+                        </div>
+                        <div id = "Cost">
+                            <h2>999.999$</h2>
+                        </div> -->
+        
+                        <!-- <div id="ChooseFavarite">
+                            <h4>Màu sắc:</h4>
+                        </div> -->
+    
+                        <!-- <div id="AddButton">
+                            <button class = "Operator" onclick="Subtract()"><h3>-</h3></button>
+                            <div><input type="text" name="" id="NumberOfItem" value="1"></div>
+                            <button class = "Operator" onclick="Add()"><h3>+</h3></button>
+                            <button id="AddItem"><h4>THÊM VÀO GIỎ</h4></button>
+                        </div>
+                    </div>
+                    
+                    <div id = "InfotoContact">
+                        <div><h4>CHÚNG TÔI LUÔN SẴN SÀNG ĐỂ GIÚP ĐỠ BẠN</h4></div>
+                        <div id = "ImageContact"><img src="/Content Of Item/imgItems/ho tro.webp" alt=""></div>
+                        <div><h4>Để được hỗ trợ tốt nhất. Hãy gọi</h4></div>
+                        <div id = "PhoneNumber"><h1>1900 9999</h1></div>
+                        <div><h4>-----Hoặc-----</h4></div>
+                        <div><h4>Chat hỗ trợ trực tuyến</h4></div>
+                    </div>
+                </div> -->
+                
+        </div>
+
+        <div id="AllInfomationOfItem">
+            <!-- <div id="ButtonInfomation">
+                <button onclick="ChangeToDescription()"><h4>MÔ TẢ</h4></button>
+                <button onclick="ChangeToIntroduction()"><h4>GIỚI THIỆU</h4></button>
+            </div> -->
+
+            <!-- <div id="ContentInfomation">
+
+                <div id="TableInfomationItem">
+                    <div class="ColumnInfomationItem">
+                        <div class="AttributeInfomationItem"><h4>Thương hiệu</h4></div>
+                        <div class="ContentInfomationItem"><h4>FlexOffice</h4></div>
+                    </div>
+    
+                    <div class="ColumnInfomationItem">
+                        <div class="AttributeInfomationItem"><h4> Kích thước</h4></div>
+                        <div class="ContentInfomationItem"><h4>133 x 112m</h4></div>
+                    </div>
+    
+                    <div class="ColumnInfomationItem">
+                        <div class="AttributeInfomationItem"><h4>Trọng lượng</h4></div>
+                        <div class="ContentInfomationItem"><h4>134g</h4></div>
+                    </div>
+    
+                    <div class="ColumnInfomationItem">
+                        <div class="AttributeInfomationItem"><h4>Quy cách</h4></div>
+                        <div class="ContentInfomationItem"><h4>	01 cái/hộp nhỏ; 20 hộp nhỏ/hộp lớn; 4 hộp lớn/thùng</h4></div>
+                    </div>
+    
+                    <div class="ColumnInfomationItem">
+                        <div class="AttributeInfomationItem"><h4>Bảo quản</h4></div>
+                        <div class="ContentInfomationItem"><h4>Nơi khô ráo, tránh lửa</h4></div>
+                    </div>
+                </div>
+                
+                <div id="DescribeItem">
+                    
+                </div> -->
+
+            <!-- </div> -->
+
+            <!-- <div id = "IntroductionItem">
+                <div id ="AllIntroductionItemInfomation">
+                    <p>
+                    Evo Office Online  là website thương mại điện tử thuộc Công ty Cổ phần Evo Themes. Chúng tôi có kinh nghiệm hơn 36 năm trong ngành nghiên cứu, sản xuất và phân phối bút viết, văn phòng phẩm, học cụ và dụng cụ mỹ thuật. Evo Office Online cung cấp các mặt hàng cho nhiều đối tượng khách hàng khác nhau, từ học sinh, sinh viên, giới văn phòng, từ sản phẩm cao cấp cho đến các loại bút viết phổ thông. Tất cả đều được tập đoàn Evo Themes nghiên cứu, sản xuất và phân phối.
+                    Evo Office Online ra đời với mong muốn mang sự tiện lợi cho khách hàng có nhu cầu văn phòng phẩm, học cụ, sản phẩm mỹ thuật có thể dễ dàng tiếp cận và chọn mua sản phẩm một cách nhanh chóng. Ngoài ra, Evo Office Online còn mong muốn thay đổi thói quen tiêu dùng chọn mua văn phòng phẩm truyền thống, đem đến cho khách hàng một hệ thống cung cấp các sản phẩm văn phòng, giáo dục trực tuyến một nơi uy tín và đáng tin cậy.
+                    Evo Office Online đặt mục tiêu trở thành sàn thương mại điện tử hàng đầu Việt Nam chuyên về sản phẩm văn phòng, học cụ, dụng cụ mỹ thuật và tất cả các sản phẩm liên quan đến giáo dục.
+                    </p>
+                </div>
+            </div> -->
+
+        </div>
+
+        <div id="RelatedItem">
+            <div id="RelatedItemTitle"><h2>Sản Phẩm Liên Quan</h2></div>
+            <div id="RelatedItemLine">
+                <div class="RelatedItemBox">
+                    <div class="RelatedItem">
+                        <img id = "RelateItem1" src="/Content Of Item/imgItems/cal 01s_2.webp" onmouseover="ChangeImage1()" onmouseout="RestoreImage1()" alt="">  
+                    </div>
+                    <div class ="RelatedItemInfo">
+                        <h2>Tên Sản Phẩm</h2>
+                        <span>999$</span>
+                    </div>
+                </div>
+                
+                <div class="RelatedItemBox">
+                    <div class="RelatedItem">
+                        <img id="RelateItem2" src="/Content Of Item/imgItems/BamKim_1.webp" onmouseover="ChangeImage2()" onmouseout="RestoreImage2()" alt="">  
+                    </div>
+                    <div class ="RelatedItemInfo">
+                        <h2>Tên Sản Phẩm</h2>
+                        <span>999$</span>
+                    </div>
+                </div>
+
+                <div class="RelatedItemBox">
+                    <div class="RelatedItem">
+                        <img id ="RelateItem3" src="/Content Of Item/imgItems/Paper_1.webp" onmouseover="ChangeImage3()" onmouseout="RestoreImage3()" alt="">  
+                    </div>
+                    <div class ="RelatedItemInfo">
+                        <h2>Tên Sản Phẩm</h2>
+                        <span>999$</span>
+                    </div>
+                </div>
+                <div class="RelatedItemBox">
+                    <div class="RelatedItem">
+                        <img id="RelateItem4" src="/Content Of Item/imgItems/Paper_Idea_1.webp" onmouseover="ChangeImage4()" onmouseout="RestoreImage4()" alt="">  
+                    </div>
+                    <div class ="RelatedItemInfo">
+                        <h2>Tên Sản Phẩm</h2>
+                        <span>999$</span>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+    <script src="ContentOfItem.js"></script>
+</body>
+</html>
