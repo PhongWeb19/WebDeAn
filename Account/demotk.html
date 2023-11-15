@@ -4,10 +4,206 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/WebDeAn/Account/css.css">
+    <link rel="stylesheet" href="/WebDeAn/Content/assets/css/style.css">
+    <link rel="stylesheet" href="/WebDeAn/Content/assets/css/style2.css">
+    <link rel="stylesheet" href="/WebDeAn/Content/assets/css/style3.css">
+    <link rel="stylesheet" href="/WebDeAn/Content/assets/css/base.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>TaiKhoan</title>
 </head>
 <body>
+    <header class="header">
+            <div id="contact">
+                <p><i>Liên hệ với chúng tôi</i></p>
+            </div>
+            <div class="logo"><img src="/WebDeAn/Content/assets/img/logo.jpg" alt="All you need"></div>
+            <form>
+                <div id="timkiem">
+                    <input id="tk" type="text" placeholder="Bạn cần tìm gì? ">
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </form>
+            <div class="select">
+                <i class="fa-solid fa-cart-shopping">
+                    <div class="giohang">
+                        <p><b>Đăng nhập</b> để xem giỏ hàng</p>
+                        <input type="submit" value="Đăng nhập" style="cursor: pointer" onclick="MoveToLogIn()">
+                    </div>
+                </i>
+
+                <i class="fa-solid fa-bell">
+                    <div class="thongbao">
+                        <p><b>Đăng nhập</b> để xem thông báo</p>
+                        <input type="submit" value="Đăng nhập" style="cursor: pointer" onclick="MoveToLogIn()"">
+                    </div>
+                </i>
+
+                <i class="fa-solid fa-user-large">
+                    <div class="taikhoan">
+                        <input type="submit" value="Đăng kí" style="cursor: pointer" onclick="MoveToSignUp()">
+                        <hr width="50%" size="2px" color="#b0a9a9" />
+                        <input type="submit" value="Đăng nhập" style="cursor: pointer" onclick="MoveToLogIn()">
+                    </div>
+                </i>
+                <!--<div class="select_thugon">
+                  <button><i class="fas fa-bars"></i></button>
+                </div>-->
+            </div>
+        </header>
+        <div class="modal__overlay"></div>
+        <nav class="content__navbar">
+            <div class="menu">
+                <h3 class="menu__heading">
+                    Danh mục sản phẩm
+                </h3>
+
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="#" class="menu-item__link ">Sản phẩm mới</a>
+                    </li>
+                    <li class="menu-item item-right menu-item-additon__vpp">
+                        <a href="#" class="menu-item__link">Văn phòng phẩm</a>
+                        <span class="right__icon-wrap">
+                            <i class=" right__icon fa-solid fa-chevron-right"></i>
+                        </span>
+                        <div class="additon__vpp">
+                            <ul class="additon__list">
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link" style="font-weight: 600;">Giấy văn phòng</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Giấy in - giấy photo</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Giấy bìa màu</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Giấy ghi chú</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Giấy decal - giấy dán nhãn</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Các loại giấy khác</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link" style="font-weight: 600;">Dụng cụ văn
+                                        phòng</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Dao rọc giấy</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Kéo văn phòng</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bấm kim - Gỡ kim</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Máy tính cầm tay</a>
+                                </li>
+                            </ul>
+                            <ul class="additon__list">
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link" style="font-weight: 600;">Bút viết</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bút chì</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bút bi</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bút lông bảng - lông dầu</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Mực bút lông bảng - lông dầu</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bút dạ quang</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link" style="font-weight: 600;">File - Bìa hồ
+                                        sơ</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bìa lá - Bìa nhiều lá</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bìa nút</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bìa nhẫn</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bìa còng</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-item__link">Sản phẩm cao cấp - Quà tặng</a>
+                    </li>
+                    <li class="menu-item item-right menu-item-additon__dcht">
+                        <a href="#" class="menu-item__link">Dụng cụ học tập</a>
+                        <span class="right__icon-wrap">
+                            <i class=" right__icon fa-solid fa-chevron-right"></i>
+                        </span>
+                        <div class="additon__dcht">
+                            <ul class="additon__list">
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link" style="font-weight: 600;">Văn phòng phẩm</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Giấy văn phòng</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bút viết</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Dụng cụ văn phòng</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">File - Bìa hồ sơ</a>
+                                </li>
+                            </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-item__link" onclick="hideElements();">Máy in - Nhãn in</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-item__link" onclick="hideElements();">Vật phẩm quảng cáo</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-item__link">Bút bi</a>
+                    </li>
+                    <li class="menu-item">
+                        <!-- <a href="#" class="menu-item__link">Xem thêm ...</a> -->
+
+                    </li>
+                </ul>
+                <!-- <div class="btn-wrap">
+                    <button id="toggleBtn">Xem thêm</button>
+                </div>
+                 -->
+            </div>
+
+            <div class="content__navbar-item">
+                <a href="#" class="content__navbar-item-link">Trang Chủ</a>
+            </div>
+            <div class="content__navbar-item">
+                <a href="#" class="content__navbar-item-link">Giới thiệu</a>
+            </div>
+            <div class="content__navbar-item">
+                <a href="#" class="content__navbar-item-link">Liên hệ</a>
+            </div>
+            <div class="content__navbar-item">
+                <a href="/WebDeAn/DatHang/DatHang.html" class="content__navbar-item-link">Đặt hàng</a>
+            </div>
+        </nav>
+
     <div class="wrapper">
         <div id="form-left" >
             <div class="quyenloi">
@@ -97,6 +293,104 @@
         </div>
         
     </div>
+        <footer class="footer">
+            <div class="footer__heading">
+                <div class="footer__heading-social">
+                    <i class="footer__heading-social-icon fa-brands fa-facebook-f"></i>
+                    <i class="footer__heading-social-name">Facebook</i>
+                </div>
+                <div class="footer__heading-social">
+                    <i class="footer__heading-social-icon fa-brands fa-x-twitter"></i>
+                    <i class="footer__heading-social-name">X-Twitter</i>
+                </div>
+                <div class="footer__heading-social">
+                    <i class="footer__heading-social-icon fa-brands fa-youtube"></i>
+                    <i class="footer__heading-social-name">Youtube</i>
+                </div>
+                <div class="footer__heading-social">
+                    <i class="footer__heading-social-icon fa-brands fa-instagram"></i>
+                    <i class="footer__heading-social-name">Instagram</i>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="grid__row footer__row">
+                    <div class="grid__column-2-4 ">
+                        <h3 class="footer__title">THÔNG TIN CÔNG TY</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="/" class="footer__item-link">Trang chủ</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">Giới thiệu</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">Liên hệ</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">Đặt hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__title">CHÍNH SÁCH</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="/" class="footer__item-link">Trang chủ</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">Giới thiệu</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">Liên hệ</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">Đặt hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-30 footer--center">
+                        <h3 class="footer__title">THÔNG TIN LIÊN HỆ</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <span class="footer__item-address">
+                                    Địa chỉ: 70 Lu Gia, Ward 15, District 11, Ho Chi Minh City
+                                </span>
+                            </li>
+                            <li class="footer__item">
+                                Email:
+                                <a href="#" class="footer__item-link">support@sapo.vn</a>
+                            </li>
+                            <li class="footer__item">
+                                Điện thoại:
+                                <a href="#" class="footer__item-link">1900 6750</a>
+                            </li>
+                            <li class="footer__item">
+                                Zalo:
+                                <a href="#" class="footer__item-link">1900 6750</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-30">
+                        <div class="help-customer">
+                            <div class="time">
+                                <img src="/WebDeAn/Content/assets/img/time.jpg" alt="" class="time__img">
+                                <div class="help">
+                                    <span class="help__tittle">Hỗ trợ khách hàng</span>
+                                    <span class="help__description">Hỗ trợ 24/7</span>
+                                </div>
+                            </div>
+                            <div class="gift">
+                                <img src="/WebDeAn/Content/assets/img/gift.jpg" alt="" class="gift__img">
+                                <div class="help">
+                                    <span class="help__tittle">Giao hàng miễn phí</span>
+                                    <span class="help__description">Tất cả đơn hàng trên 200k</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 </body>
 <script src="/WebDeAn/script.js"></script>
 </html>
