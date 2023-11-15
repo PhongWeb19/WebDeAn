@@ -89,54 +89,54 @@ function calPrice_current(chuoi1, chuoi2){
 // Sách tư duy - Kỹ năng sống
 
 const products = [
-  { id: 1, img: "/Content/assets/img/product1.jpeg", name: "b", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Deli", sector_title:"Bấm kim" },
-  { id: 2, img: "/Content/assets/img/product2.jpeg", name: "C", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Deli", sector_title:"Bấm kim" },
-  { id: 3, img: "/Content/assets/img/product3.jpeg", name: "l", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Deli", sector_title:"Bấm kim" },
-  { id: 4, img: "/Content/assets/img/product4.jpeg", name: "m", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Deli", sector_title:"Bấm kim" },
-  { id: 5, img: "/Content/assets/img/product5.jpeg", name: "o", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Deli", sector_title:"Bấm kim" },
-  { id: 6, img: "/Content/assets/img/product6.jpeg", name: "d", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Deli", sector_title:"Bấm kim" },
-  { id: 7, img: "/Content/assets/img/product7.jpeg", name: "a", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Deli", sector_title:"Bấm kim" },
-  { id: 8, img: "/Content/assets/img/product8.jpeg", name: "u", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Deli", sector_title:"Bấm kim" },
-  { id: 9, img: "/Content/assets/img/product9.jpeg", name: "g", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Deli", sector_title:"Bấm kim" },
-  { id: 10, img: "/Content/assets/img/product10.jpeg", name: "y", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Evo office", sector_title:"Bấm kim" },
-  { id: 11, img: "/Content/assets/img/product11.jpeg", name: "h", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Evo office", sector_title:"Bảng vẽ" },
-  { id: 12, img: "/Content/assets/img/product12.jpeg", name: "t", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Evo office", sector_title:"Bảng vẽ" },
-  { id: 13, img: "/Content/assets/img/product1.jpeg", name: "b", price_old: "1300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Evo office", sector_title:"Bảng vẽ" },
-  { id: 14, img: "/Content/assets/img/product2.jpeg", name: "C", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Evo office", sector_title:"Bảng vẽ" },
-  { id: 15, img: "/Content/assets/img/product3.jpeg", name: "l", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Thiên Long", sector_title:"Bảng vẽ" },
-  { id: 16, img: "/Content/assets/img/product4.jpeg", name: "m", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Thiên Long", sector_title:"Bảng vẽ" },
-  { id: 17, img: "/Content/assets/img/product5.jpeg", name: "o", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Thiên Long", sector_title:"Bảng vẽ" },
-  { id: 18, img: "/Content/assets/img/product6.jpeg", name: "d", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Thiên Long", sector_title:"Bảng vẽ" },
-  { id: 19, img: "/Content/assets/img/product7.jpeg", name: "a", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Thiên Long", sector_title:"Bảng vẽ" },
-  { id: 20, img: "/Content/assets/img/product8.jpeg", name: "u", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Idea", sector_title:"" },
-  { id: 21, img: "/Content/assets/img/product9.jpeg", name: "g", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Idea", sector_title:"" },
-  { id: 22, img: "/Content/assets/img/product10.jpeg", name: "y", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Idea", sector_title:"" },
-  { id: 23, img: "/Content/assets/img/product11.jpeg", name: "h", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Idea", sector_title:"" },
-  { id: 24, img: "/Content/assets/img/product12.jpeg", name: "t", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Idea", sector_title:"" },
-  { id: 25, img: "/Content/assets/img/product1.jpeg", name: "b", price_old: "1300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Idea", sector_title:"" },
-  { id: 26, img: "/Content/assets/img/product2.jpeg", name: "C", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Idea", sector_title:"" },
-  { id: 27, img: "/Content/assets/img/product3.jpeg", name: "l", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Idea", sector_title:"" },
-  { id: 28, img: "/Content/assets/img/product4.jpeg", name: "m", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"OEM", sector_title:"" },
-  { id: 29, img: "/Content/assets/img/product5.jpeg", name: "o", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"OEM", sector_title:"" },
-  { id: 30, img: "/Content/assets/img/product6.jpeg", name: "d", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"OEM", sector_title:"" },
-  { id: 31, img: "/Content/assets/img/product7.jpeg", name: "a", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"OEM", sector_title:"" },
-  { id: 32, img: "/Content/assets/img/product8.jpeg", name: "u", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"OEM", sector_title:"" },
-  { id: 33, img: "/Content/assets/img/product9.jpeg", name: "g", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"OEM", sector_title:"" },
-  { id: 34, img: "/Content/assets/img/product10.jpeg", name: "y", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"OEM", sector_title:"" },
-  { id: 35, img: "/Content/assets/img/product11.jpeg", name: "h", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"OEM", sector_title:"" },
-  { id: 36, img: "/Content/assets/img/product12.jpeg", name: "t", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"OEM", sector_title:"" },
-  { id: 37, img: "/Content/assets/img/product1.jpeg", name: "b", price_old: "1300.000d", price_current: "", sale_off_percent: "10%", brand_title:"OEM", sector_title:"" },
-  { id: 38, img: "/Content/assets/img/product2.jpeg", name: "C", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"OEM", sector_title:"" },
-  { id: 39, img: "/Content/assets/img/product3.jpeg", name: "l", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"OEM", sector_title:"" },
-  { id: 40, img: "/Content/assets/img/product4.jpeg", name: "m", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Xukiva", sector_title:"" },
-  { id: 41, img: "/Content/assets/img/product5.jpeg", name: "o", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Xukiva", sector_title:"" },
-  { id: 42, img: "/Content/assets/img/product6.jpeg", name: "d", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Xukiva", sector_title:"" },
-  { id: 43, img: "/Content/assets/img/product7.jpeg", name: "a", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Xukiva", sector_title:"" },
-  { id: 44, img: "/Content/assets/img/product8.jpeg", name: "u", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Xukiva", sector_title:"" },
-  { id: 45, img: "/Content/assets/img/product9.jpeg", name: "g", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Xukiva", sector_title:"" },
-  { id: 46, img: "/Content/assets/img/product10.jpeg", name: "y", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Xukiva", sector_title:"" },
-  { id: 47, img: "/Content/assets/img/product11.jpeg", name: "h", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Xukiva", sector_title:"" },
-  { id: 48, img: "/Content/assets/img/product12.jpeg", name: "t", price_old: "1.400.000d", price_current: "", sale_off_percent: "10%", brand_title:"Xukiva", sector_title:""}
+  { id: 1, img: "/WebDeAn/Content/assets/img/product1.jpeg", name: "b", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Deli", sector_title:"Bấm kim" },
+  { id: 2, img: "/WebDeAn/Content/assets/img/product2.jpeg", name: "C", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Deli", sector_title:"Bấm kim" },
+  { id: 3, img: "/WebDeAn/Content/assets/img/product3.jpeg", name: "l", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Deli", sector_title:"Bấm kim" },
+  { id: 4, img: "/WebDeAn/Content/assets/img/product4.jpeg", name: "m", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Deli", sector_title:"Bấm kim" },
+  { id: 5, img: "/WebDeAn/Content/assets/img/product5.jpeg", name: "o", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Deli", sector_title:"Bấm kim" },
+  { id: 6, img: "/WebDeAn/Content/assets/img/product6.jpeg", name: "d", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Deli", sector_title:"Bấm kim" },
+  { id: 7, img: "/WebDeAn/Content/assets/img/product7.jpeg", name: "a", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Deli", sector_title:"Bấm kim" },
+  { id: 8, img: "/WebDeAn/Content/assets/img/product8.jpeg", name: "u", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Deli", sector_title:"Bấm kim" },
+  { id: 9, img: "/WebDeAn/Content/assets/img/product9.jpeg", name: "g", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Deli", sector_title:"Bấm kim" },
+  { id: 10, img: "/WebDeAn/Content/assets/img/product10.jpeg", name: "y", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Evo office", sector_title:"Bấm kim" },
+  { id: 11, img: "/WebDeAn/Content/assets/img/product11.jpeg", name: "h", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Evo office", sector_title:"Bảng vẽ" },
+  { id: 12, img: "/WebDeAn/Content/assets/img/product12.jpeg", name: "t", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Evo office", sector_title:"Bảng vẽ" },
+  { id: 13, img: "/WebDeAn/Content/assets/img/product1.jpeg", name: "b", price_old: "1300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Evo office", sector_title:"Bảng vẽ" },
+  { id: 14, img: "/WebDeAn/Content/assets/img/product2.jpeg", name: "C", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Evo office", sector_title:"Bảng vẽ" },
+  { id: 15, img: "/WebDeAn/Content/assets/img/product3.jpeg", name: "l", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Thiên Long", sector_title:"Bảng vẽ" },
+  { id: 16, img: "/WebDeAn/Content/assets/img/product4.jpeg", name: "m", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Thiên Long", sector_title:"Bảng vẽ" },
+  { id: 17, img: "/WebDeAn/Content/assets/img/product5.jpeg", name: "o", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Thiên Long", sector_title:"Bảng vẽ" },
+  { id: 18, img: "/WebDeAn/Content/assets/img/product6.jpeg", name: "d", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Thiên Long", sector_title:"Bảng vẽ" },
+  { id: 19, img: "/WebDeAn/Content/assets/img/product7.jpeg", name: "a", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Thiên Long", sector_title:"Bảng vẽ" },
+  { id: 20, img: "/WebDeAn/Content/assets/img/product8.jpeg", name: "u", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Idea", sector_title:"" },
+  { id: 21, img: "/WebDeAn/Content/assets/img/product9.jpeg", name: "g", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Idea", sector_title:"" },
+  { id: 22, img: "/WebDeAn/Content/assets/img/product10.jpeg", name: "y", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Idea", sector_title:"" },
+  { id: 23, img: "/WebDeAn/Content/assets/img/product11.jpeg", name: "h", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Idea", sector_title:"" },
+  { id: 24, img: "/WebDeAn/Content/assets/img/product12.jpeg", name: "t", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Idea", sector_title:"" },
+  { id: 25, img: "/WebDeAn/Content/assets/img/product1.jpeg", name: "b", price_old: "1300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Idea", sector_title:"" },
+  { id: 26, img: "/WebDeAn/Content/assets/img/product2.jpeg", name: "C", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Idea", sector_title:"" },
+  { id: 27, img: "/WebDeAn/Content/assets/img/product3.jpeg", name: "l", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Idea", sector_title:"" },
+  { id: 28, img: "/WebDeAn/Content/assets/img/product4.jpeg", name: "m", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"OEM", sector_title:"" },
+  { id: 29, img: "/WebDeAn/Content/assets/img/product5.jpeg", name: "o", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"OEM", sector_title:"" },
+  { id: 30, img: "/WebDeAn/Content/assets/img/product6.jpeg", name: "d", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"OEM", sector_title:"" },
+  { id: 31, img: "/WebDeAn/Content/assets/img/product7.jpeg", name: "a", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"OEM", sector_title:"" },
+  { id: 32, img: "/WebDeAn/Content/assets/img/product8.jpeg", name: "u", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"OEM", sector_title:"" },
+  { id: 33, img: "/WebDeAn/Content/assets/img/product9.jpeg", name: "g", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"OEM", sector_title:"" },
+  { id: 34, img: "/WebDeAn/Content/assets/img/product10.jpeg", name: "y", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"OEM", sector_title:"" },
+  { id: 35, img: "/WebDeAn/Content/assets/img/product11.jpeg", name: "h", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"OEM", sector_title:"" },
+  { id: 36, img: "/WebDeAn/Content/assets/img/product12.jpeg", name: "t", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"OEM", sector_title:"" },
+  { id: 37, img: "/WebDeAn/Content/assets/img/product1.jpeg", name: "b", price_old: "1300.000d", price_current: "", sale_off_percent: "10%", brand_title:"OEM", sector_title:"" },
+  { id: 38, img: "/WebDeAn/Content/assets/img/product2.jpeg", name: "C", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"OEM", sector_title:"" },
+  { id: 39, img: "/WebDeAn/Content/assets/img/product3.jpeg", name: "l", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"OEM", sector_title:"" },
+  { id: 40, img: "/WebDeAn/Content/assets/img/product4.jpeg", name: "m", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Xukiva", sector_title:"" },
+  { id: 41, img: "/WebDeAn/Content/assets/img/product5.jpeg", name: "o", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Xukiva", sector_title:"" },
+  { id: 42, img: "/WebDeAn/Content/assets/img/product6.jpeg", name: "d", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Xukiva", sector_title:"" },
+  { id: 43, img: "/WebDeAn/Content/assets/img/product7.jpeg", name: "a", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Xukiva", sector_title:"" },
+  { id: 44, img: "/WebDeAn/Content/assets/img/product8.jpeg", name: "u", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Xukiva", sector_title:"" },
+  { id: 45, img: "/WebDeAn/Content/assets/img/product9.jpeg", name: "g", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Xukiva", sector_title:"" },
+  { id: 46, img: "/WebDeAn/Content/assets/img/product10.jpeg", name: "y", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Xukiva", sector_title:"" },
+  { id: 47, img: "/WebDeAn/Content/assets/img/product11.jpeg", name: "h", price_old: "1.300.000d", price_current: "", sale_off_percent: "10%", brand_title:"Xukiva", sector_title:"" },
+  { id: 48, img: "/WebDeAn/Content/assets/img/product12.jpeg", name: "t", price_old: "1.400.000d", price_current: "", sale_off_percent: "10%", brand_title:"Xukiva", sector_title:""}
 ]
 // sort-cate
 
@@ -769,17 +769,17 @@ document.getElementById('reset3').addEventListener('click', () => {
 
 function MoveToSignUp()
 {
-  window.location.href="/Account/demotk.html";
+  window.location.href="/WebDeAn/Account/demotk.html";
 }
 
 function MoveToLogIn()
 {
-  window.location.href="/Account/demotk.html";
+  window.location.href="/WebDeAn/Account/demotk.html";
 }
 
 
 function hienali(IdItem){
-  window.location.href=`/Content Of Item/ContentOfItem.html?id=${IdItem}`;
+  window.location.href=`/WebDeAn/Content Of Item/ContentOfItem.html?id=${IdItem}`;
 }
 
 
