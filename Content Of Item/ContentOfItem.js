@@ -234,6 +234,14 @@ function HandleInterfaceItem(nameParam)
         }
     });
 }
+function MoveToSignUp()
+{
+  window.location.href="/WebDeAn/Account/demotk.html";
+}
 
+function MoveToLogIn()
+{
+  window.location.href="/WebDeAn/Account/demotk.html";
+}
 HandleUrlItems();
 ModalOverLay();
