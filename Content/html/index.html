@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Content/assets/css/base.css">
+    <link rel="stylesheet" href="/Content/assets/css/style.css">
+    <link rel="stylesheet" href="/Content/assets/css/style2.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="/Content Of Item/ContentOfItem.css">
+    <title>DoAn</title>
+
+</head>
+
+<body>
+    <div class="main">
+        <header class="header">
+            <div id="contact">
+                <p><i>Liên hệ với chúng tôi</i></p>
+            </div>
+            <div class="logo"><img src="/Content/assets/img/logo.jpg" alt="All you need"></div>
+            <form>
+                <div id="timkiem">
+                    <input id="tk" type="text" placeholder="Bạn cần tìm gì? ">
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </form>
+            <div class="select">
+                <i class="fa-solid fa-cart-shopping">
+                    <div class="giohang">
+                        <p><b>Đăng nhập</b> để xem giỏ hàng</p>
+                        <input type="submit" value="Đăng nhập" style="cursor: pointer" onclick="MoveToLogIn()">
+                    </div>
+                </i>
+
+                <i class="fa-solid fa-bell">
+                    <div class="thongbao">
+                        <p><b>Đăng nhập</b> để xem thông báo</p>
+                        <input type="submit" value="Đăng nhập" style="cursor: pointer" onclick="MoveToLogIn()"">
+                    </div>
+                </i>
+
+                <i class="fa-solid fa-user-large">
+                    <div class="taikhoan">
+                        <input type="submit" value="Đăng kí" style="cursor: pointer" onclick="MoveToSignUp()">
+                        <hr width="50%" size="2px" color="#b0a9a9" />
+                        <input type="submit" value="Đăng nhập" style="cursor: pointer" onclick="MoveToLogIn()">
+                    </div>
+                </i>
+                <!--<div class="select_thugon">
+                  <button><i class="fas fa-bars"></i></button>
+                </div>-->
+            </div>
+        </header>
+        <div class="modal__overlay"></div>
+        <nav class="content__navbar">
+            <div class="menu">
+                <h3 class="menu__heading">
+                    Danh mục sản phẩm
+                </h3>
+
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="#" class="menu-item__link ">Sản phẩm mới</a>
+                    </li>
+                    <li class="menu-item item-right menu-item-additon__vpp">
+                        <a href="#" class="menu-item__link">Văn phòng phẩm</a>
+                        <span class="right__icon-wrap">
+                            <i class=" right__icon fa-solid fa-chevron-right"></i>
+                        </span>
+                        <div class="additon__vpp">
+                            <ul class="additon__list">
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link" style="font-weight: 600;">Giấy văn phòng</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Giấy in - giấy photo</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Giấy bìa màu</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Giấy ghi chú</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Giấy decal - giấy dán nhãn</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Các loại giấy khác</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link" style="font-weight: 600;">Dụng cụ văn
+                                        phòng</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Dao rọc giấy</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Kéo văn phòng</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bấm kim - Gỡ kim</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Máy tính cầm tay</a>
+                                </li>
+                            </ul>
+                            <ul class="additon__list">
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link" style="font-weight: 600;">Bút viết</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bút chì</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bút bi</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bút lông bảng - lông dầu</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Mực bút lông bảng - lông dầu</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bút dạ quang</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link" style="font-weight: 600;">File - Bìa hồ
+                                        sơ</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bìa lá - Bìa nhiều lá</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bìa nút</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bìa nhẫn</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bìa còng</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-item__link">Sản phẩm cao cấp - Quà tặng</a>
+                    </li>
+                    <li class="menu-item item-right menu-item-additon__dcht">
+                        <a href="#" class="menu-item__link">Dụng cụ học tập</a>
+                        <span class="right__icon-wrap">
+                            <i class=" right__icon fa-solid fa-chevron-right"></i>
+                        </span>
+                        <div class="additon__dcht">
+                            <ul class="additon__list">
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link" style="font-weight: 600;">Văn phòng phẩm</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Giấy văn phòng</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Bút viết</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">Dụng cụ văn phòng</a>
+                                </li>
+                                <li class="additon__vpp-item">
+                                    <a href="#" class="additon__item-link">File - Bìa hồ sơ</a>
+                                </li>
+                            </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-item__link" onclick="hideElements();">Máy in - Nhãn in</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-item__link" onclick="hideElements();">Vật phẩm quảng cáo</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-item__link">Bút bi</a>
+                    </li>
+                    <li class="menu-item">
+                        <!-- <a href="#" class="menu-item__link">Xem thêm ...</a> -->
+
+                    </li>
+                </ul>
+                <!-- <div class="btn-wrap">
+                    <button id="toggleBtn">Xem thêm</button>
+                </div>
+                 -->
+            </div>
+
+            <div class="content__navbar-item">
+                <a href="#" class="content__navbar-item-link">Trang Chủ</a>
+            </div>
+            <div class="content__navbar-item">
+                <a href="#" class="content__navbar-item-link">Giới thiệu</a>
+            </div>
+            <div class="content__navbar-item">
+                <a href="#" class="content__navbar-item-link">Liên hệ</a>
+            </div>
+            <div class="content__navbar-item">
+                <a href="/DatHang/DatHang.html" class="content__navbar-item-link">Đặt hàng</a>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <!-- 333 -->
+                            <h3 class="category__heading">
+                                <i class="category__heading-icon fa-solid fa-list"></i>
+                                Danh mục sản phẩm
+                            </h3>
+                            <ul class="category-list">
+                                <li class="category-item ">
+                                    <a href="#" class="category-item__link ">Sản phẩm mới</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Văn phòng phẩm</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Sản phẩm cao cấp - Quà tặng</a>
+                                </li>
+                                <li class="category-item ">
+                                    <a href="#" class="category-item__link ">Dụng cụ học tập</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link" onclick="hideElements();">Máy in - Nhãn
+                                        in</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link" onclick="hideElements();">Vật phẩm quảng
+                                        cáo</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Bút bi</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Bút máy</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Phụ kiện bút cao cấp</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Đồ chơi sáng tạo</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Balo Học sinh</a>
+                                </li>
+                            </ul>
+
+                        </nav>
+                        <!-- aside 1 -->
+                        <!-- 444 -->
+                        <aside class="aside hidden">
+                            <h3 class="aside__title">Thương hiệu</h3>
+                            <div class="aside__content">
+                                <div class="search">
+                                    <input type="text" class="search__input search__input-brand"
+                                        placeholder="Tìm thương hiệu">
+                                    <span class="search-with-icon">
+                                        <i class="search__icon fa-solid fa-magnifying-glass"></i>
+                                    </span>
+                                </div>
+                                <ul class="aside__list aside__list-brand">
+                                    <li class="aside__item">
+                                        <label for="Deli" class="aside__item-label">
+                                            <input id="Deli" class="aside__item-input filter-brand" type="checkbox">
+                                            <i>Deli</i>
+                                        </label>
+                                    </li>
+                                    <li class="aside__item">
+                                        <label for="Evo office" class="aside__item-label">
+                                            <input id="Evo office" class="aside__item-input filter-brand"
+                                                type="checkbox">
+                                            <i>Evo office</i>
+                                        </label>
+                                    </li>
+                                    <li class="aside__item">
+                                        <label for="Thiên Long" class="aside__item-label">
+                                            <input id="Thiên Long" class="aside__item-input filter-brand"
+                                                type="checkbox">
+                                            <i>Thiên Long</i>
+                                        </label>
+                                    </li>
+                                    <li class="aside__item">
+                                        <label for="Idea" class="aside__item-label">
+                                            <input id="Idea" class="aside__item-input filter-brand" type="checkbox">
+                                            <i>Idea</i>
+                                        </label>
+                                    </li>
+                                    <li class="aside__item">
+                                        <label for="OEM" class="aside__item-label">
+                                            <input id="OEM" class="aside__item-input filter-brand" type="checkbox">
+                                            <i>OEM</i>
+                                        </label>
+                                    </li>
+                                    <li class="aside__item">
+                                        <label for="Xukiva" class="aside__item-label">
+                                            <input id="Xukiva" class="aside__item-input filter-brand" type="checkbox">
+                                            <i>Xukiva</i>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="btn-filter-wrap">
+                                <div class="btn-filter">
+                                    <span id="filter1" class="btn btn--primary">filter</button>
+                                </div>
+                                <div class="btn-filter">
+                                    <span id="reset1" class="btn btn--primary">reset</button>
+                                </div>
+                            </div>
+                        </aside>
+                        <!-- aside 2 -->
+                        <aside class="aside">
+                            <h3 class="aside__title">Giá sản phẩm</h3>
+                            <div class="aside__content">
+                                <ul class="aside__list">
+                                    <li class="aside__item">
+                                        <label for="Giá dưới 100.000đ" class="aside__item-label">
+                                            <input id="Giá dưới 100.000đ" class="aside__item-input filter-price"
+                                                type="checkbox">
+                                            <i>Giá dưới 100.000đ</i>
+                                        </label>
+                                    </li>
+                                    <li class="aside__item">
+                                        <label for="100.000đ - 200.000đ" class="aside__item-label">
+                                            <input id="100.000đ - 200.000đ" class="aside__item-input filter-price"
+                                                type="checkbox">
+                                            <i>100.000đ - 200.000đ</i>
+                                        </label>
+                                    </li>
+                                    <li class="aside__item">
+                                        <label for=" 200.000đ - 300.000đ" class="aside__item-label">
+                                            <input id=" 200.000đ - 300.000đ" class="aside__item-input filter-price"
+                                                type="checkbox">
+                                            <i> 200.000đ - 300.000đ</i>
+                                        </label>
+                                    </li>
+                                    <li class="aside__item">
+                                        <label for="300.000đ - 500.000đ" class="aside__item-label">
+                                            <input id="300.000đ - 500.000đ" class="aside__item-input filter-price"
+                                                type="checkbox">
+                                            <i>300.000đ - 500.000đ</i>
+                                        </label>
+                                    </li>
+                                    <li class="aside__item">
+                                        <label for="500.000đ - 1.000.000đ" class="aside__item-label">
+                                            <input id="500.000đ - 1.000.000đ" class="aside__item-input filter-price"
+                                                type="checkbox">
+                                            <i>500.000đ - 1.000.000đ</i>
+                                        </label>
+                                    </li>
+                                    <li class="aside__item">
+                                        <label for="Giá trên 1.000.000đ" class="aside__item-label">
+                                            <input id="Giá trên 1.000.000đ" class="aside__item-input filter-price"
+                                                type="checkbox">
+                                            <i>Giá trên 1.000.000đ</i>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="btn-filter-wrap">
+                                <div class="btn-filter">
+                                    <span id="filter2" class="btn btn--primary">filter</button>
+                                </div>
+                                <div class="btn-filter">
+                                    <span id="reset2" class="btn btn--primary">reset</button>
+                                </div>
+                            </div>
+                        </aside>
+                        <!-- aside 3 -->
+
+                        <!-- 444 -->
+                        <aside class="aside hidden">
+                            <h3 class="aside__title">Loại</h3>
+                            <div class="aside__content">
+                                <div class="search">
+                                    <input type="text" class="search__input search__input-sector"
+                                        placeholder="Tìm loại">
+                                    <span class="search-with-icon">
+                                        <i class="search__icon fa-solid fa-magnifying-glass"></i>
+                                    </span>
+                                </div>
+                                <ul class="aside__list aside__list-scroll aside__list-sector">
+                                    <li class="aside__item">
+                                        <label for="Bấm kim" class="aside__item-label">
+                                            <input id="Bấm kim" class="aside__item-input filter-sector" type="checkbox">
+                                            <i>Bấm kim</i>
+                                        </label>
+                                    </li>
+                                    <li class="aside__item">
+                                        <label for="Bảng vẽ" class="aside__item-label">
+                                            <input id="Bảng vẽ" class="aside__item-input filter-sector" type="checkbox">
+                                            <i>Bảng vẽ</i>
+                                        </label>
+                                    </li>
+                                    <li class="aside__item">
+                                        <label for="Bìa lỗ" class="aside__item-label">
+                                            <input id="Bìa lỗ" class="aside__item-input filter-sector" type="checkbox">
+                                            <i>Bìa lỗ</i>
+                                        </label>
+                                    </li>
+                                    <li class="aside__item">
+                                        <label for="Bút bi" class="aside__item-label">
+                                            <input id="Bút bi" class="aside__item-input filter-sector" type="checkbox">
+                                            <i>Bút bi</i>
+                                        </label>
+                                    </li>
+                                    <li class="aside__item">
+                                        <label for="Bút dạ" class="aside__item-label">
+                                            <input id="Bút dạ" class="aside__item-input filter-sector" type="checkbox">
+                                            <i>Bút dạ</i>
+                                        </label>
+                                    </li>
+                                    <li class="aside__item">
+                                        <label for="Bút lông dầu" class="aside__item-label">
+                                            <input id="Bút lông dầu" class="aside__item-input filter-sector"
+                                                type="checkbox">
+                                            <i>Bút lông dầu</i>
+                                        </label>
+                                    </li>
+                                    <li class="aside__item">
+                                        <label for="Bút lông kim" class="aside__item-label">
+                                            <input id="Bút lông kim" class="aside__item-input filter-sector"
+                                                type="checkbox">
+                                            <i>Bút lông kim</i>
+                                        </label>
+                                    </li>
+                                    <li class="aside__item">
+                                        <label for="Dao rọc giấy" class="aside__item-label">
+                                            <input id="Dao rọc giấy" class="aside__item-input filter-sector"
+                                                type="checkbox">
+                                            <i>Dao rọc giấy</i>
+                                        </label>
+                                    </li>
+                                    <li class="aside__item">
+                                        <label for="Giấy" class="aside__item-label">
+                                            <input id="Giấy" class="aside__item-input filter-sector" type="checkbox">
+                                            <i>Giấy</i>
+                                        </label>
+                                    </li>
+                                    <li class="aside__item">
+                                        <label for="Máy tính" class="aside__item-label">
+                                            <input id="Máy tính" class="aside__item-input filter-sector"
+                                                type="checkbox">
+                                            <i>Máy tính</i>
+                                        </label>
+                                    </li>
+                                    <li class="aside__item">
+                                        <label for="Ngăn tài liệu" class="aside__item-label">
+                                            <input id="Ngăn tài liệu" class="aside__item-input filter-sector"
+                                                type="checkbox">
+                                            <i>Ngăn tài liệu</i>
+                                        </label>
+                                    </li>
+                                    <li class="aside__item">
+                                        <label for="Sách tư duy - Kỹ năng sống" class="aside__item-label">
+                                            <input id="Sách tư duy - Kỹ năng sống"
+                                                class="aside__item-input filter-sector" type="checkbox">
+                                            <i>Sách tư duy - Kỹ năng sống</i>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="btn-filter-wrap">
+                                <div class="btn-filter">
+                                    <span id="filter3" class="btn btn--primary">filter</button>
+                                </div>
+                                <div class="btn-filter">
+                                    <span id="reset3" class="btn btn--primary">reset</button>
+                                </div>
+                            </div>
+                        </aside>
+                        <!-- Radio thương hiệu loại-->
+                    </div>
+                    <div class="grid__column-10">
+                        <!-- Slide Show -->
+                        <h3 class="slide-show__name">Tất cả sản phẩm</h3>
+                        <div class="slide-show">
+                            <div class="slides">
+                                <img class="slides-img" src="/Content/assets/img/cat-banner-1.jpeg" alt="Slide 1">
+                                <img class="slides-img" src="/Content/assets/img/cat-banner-2.jpeg" alt="Slide 2">
+                                <img class="slides-img" src="/Content/assets/img/cat-banner-3.jpeg" alt="Slide 3">
+                                <img class="slides-img" src="/Content/assets/img/cat-banner-1.jpeg" alt="Slide 1">
+                                <img class="slides-img" src="/Content/assets/img/cat-banner-2.jpeg" alt="Slide 2">
+                                <img class="slides-img" src="/Content/assets/img/cat-banner-3.jpeg" alt="Slide 3">
+                            </div>
+                            <button class="prev">
+                                <i class="fa-solid fa-angles-left"></i>
+                            </button>
+                            <button class="next">
+                                <i class="fa-solid fa-angles-right"></i>
+                            </button>
+                        </div>
+
+                        <!-- sắp xếp theo -->
+                        <div class="sort-cate">
+                            <div class="sort-cate__left">
+                                <h3 class="sort-cate__name">Xếp theo:</h3>
+                                <ul class="sort-cate__list">
+                                    <li class="sort-cate__item">
+                                        <input name="sort-cate" id="AZ" type="radio" class="sort-cate__item-input">
+                                        <label for="AZ" class="sort-cate__item-name">Tên A-Z</label>
+                                    </li>
+                                    <li class="sort-cate__item">
+                                        <input name="sort-cate" id="ZA" type="radio" class="sort-cate__item-input">
+                                        <label for="ZA" class="sort-cate__item-name">Tên Z-A</label>
+                                    </li>
+                                    <li class="sort-cate__item">
+                                        <input name="sort-cate" id="price-up" type="radio"
+                                            class="sort-cate__item-input">
+                                        <label for="price-up" class="sort-cate__item-name">Giá tăng dần</label>
+                                    </li>
+                                    <li class="sort-cate__item">
+                                        <input name="sort-cate" id="price-down" type="radio"
+                                            class="sort-cate__item-input">
+                                        <label for="price-down" class="sort-cate__item-name">Giá giảm dần</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="information__no-goods">
+                            <div class="information__no-goods-banner">
+                                <p class="information__no-goods-text">Không có sản phẩm nào trong danh mục này.</p>
+                                <i class="information__no-goods-delete fa-solid fa-x"></i>
+                            </div>
+                        </div>
+                        <!-- home product item -->
+                        <div class="home-product hidden">
+                            <div class="grid__row" id="product">
+                                <!-- product item -->
+                                <!-- <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(/vd/DoAn/assets/img/product1.jpeg);"></div>
+                                        <h4 class="home-product-item__name">Bảng Vẽ Điện Tử Thông Minh Xóa Được Màn Hình LCD 8.5 Inch (Giao Màu Ngẫu Nhiên)</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.300.000d</span>
+                                            <span class="home-product-item__price-current">1.200.000d</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">10%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__action-buy">
+                                               Mua ngay
+                                            </span>
+                                        </div>
+                                    </a>        
+                                </div> -->
+                                <!-- <div class="grid__column-2-4">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(/vd/DoAn/assets/img/product1.jpeg);"></div>
+                                        <h4 class="home-product-item__name">Bảng Vẽ Điện Tử Thông Minh Xóa Được Màn Hình LCD 8.5 Inch (Giao Màu Ngẫu Nhiên)</h4>
+                                    </a>        
+                                </div> -->
+
+
+
+                                
+                            </div>
+                             
+                        </div>
+
+                        <!-- pagination  -->
+                        <div class="gg">
+                            <ul class="pagination home-product__pagination hidden">
+                                <li class="pagination-item">
+                                    <span class="pagination-button btn-prev button--ative">
+                                        <i class="pagination-item__icon fa-solid fa-angles-left"></i>
+                                    </span>
+                                </li>
+                                <div id="number-page" class="number-page">
+                                    <!-- <li class="pagination-item pagination-item--active">
+                                        <a href="#" class="pagination-item__link">1</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="#" class="pagination-item__link">2</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="#" class="pagination-item__link">3</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="#" class="pagination-item__link">...</a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="#" class="pagination-item__link">9</a>
+                                    </li> -->
+                                </div>
+        
+                                <li class="pagination-item">
+                                    <span class="pagination-button btn-next">
+                                        <i class="pagination-item__icon fa-solid fa-angles-right"></i>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <div class="footer__heading">
+                <div class="footer__heading-social">
+                    <i class="footer__heading-social-icon fa-brands fa-facebook-f"></i>
+                    <i class="footer__heading-social-name">Facebook</i>
+                </div>
+                <div class="footer__heading-social">
+                    <i class="footer__heading-social-icon fa-brands fa-x-twitter"></i>
+                    <i class="footer__heading-social-name">X-Twitter</i>
+                </div>
+                <div class="footer__heading-social">
+                    <i class="footer__heading-social-icon fa-brands fa-youtube"></i>
+                    <i class="footer__heading-social-name">Youtube</i>
+                </div>
+                <div class="footer__heading-social">
+                    <i class="footer__heading-social-icon fa-brands fa-instagram"></i>
+                    <i class="footer__heading-social-name">Instagram</i>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="grid__row footer__row">
+                    <div class="grid__column-2-4 ">
+                        <h3 class="footer__title">THÔNG TIN CÔNG TY</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="/" class="footer__item-link">Trang chủ</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">Giới thiệu</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">Liên hệ</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">Đặt hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__title">CHÍNH SÁCH</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="/" class="footer__item-link">Trang chủ</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">Giới thiệu</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">Liên hệ</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">Đặt hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-30 footer--center">
+                        <h3 class="footer__title">THÔNG TIN LIÊN HỆ</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <span class="footer__item-address">
+                                    Địa chỉ: 70 Lu Gia, Ward 15, District 11, Ho Chi Minh City
+                                </span>
+                            </li>
+                            <li class="footer__item">
+                                Email:
+                                <a href="#" class="footer__item-link">support@sapo.vn</a>
+                            </li>
+                            <li class="footer__item">
+                                Điện thoại:
+                                <a href="#" class="footer__item-link">1900 6750</a>
+                            </li>
+                            <li class="footer__item">
+                                Zalo:
+                                <a href="#" class="footer__item-link">1900 6750</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-30">
+                        <div class="help-customer">
+                            <div class="time">
+                                <img src="/Content/assets/img/time.jpg" alt="" class="time__img">
+                                <div class="help">
+                                    <span class="help__tittle">Hỗ trợ khách hàng</span>
+                                    <span class="help__description">Hỗ trợ 24/7</span>
+                                </div>
+                            </div>
+                            <div class="gift">
+                                <img src="/Content/assets/img/gift.jpg" alt="" class="gift__img">
+                                <div class="help">
+                                    <span class="help__tittle">Giao hàng miễn phí</span>
+                                    <span class="help__description">Tất cả đơn hàng trên 200k</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="/Content/assets/js/main.js">
+    
+</script>
+<script>
+    
+</script>
+</html>
+
+<!-- 
+                <div class="search">
+                    <input type="text" class="search__input" placeholder="Tìm kiếm">
+                    <span class="search-with-icon">
+                        <i class="search__icon fa-solid fa-magnifying-glass"></i>
+                    </span>
+                </div>
+ -->
