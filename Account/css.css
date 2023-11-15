@@ -1,6 +1,7 @@
 body{
     background: #ece7e7;
     font-family: Arial;
+    font-size: 16px;
 }
 .wrapper{
     display: flex;
@@ -9,22 +10,17 @@ body{
     justify-content: center; 
     flex-wrap: wrap-reverse;
     padding:40px 0px 40px 0px;
-    /*align-items: center;  */
-    /* margin-top: 160px;
-    margin-left: 350px; */
-}
-#form-left{
-    position: relative;
-    background-image: url('hinh2.jpg');
-    background-size:contain;
-    background-repeat: no-repeat;
-    box-shadow: #c6c1c1;
-    min-width: 450px;
-    /* box-shadow: 0px 0px 5px 10px #948f8f; */
-    /* border: solid 1px black; */
 
-    /* width: 50%; */
 }
+    #form-left{
+        position: relative;
+        background-image: url('hinh2.jpg');
+        background-size:contain;
+        background-repeat: no-repeat;
+        box-shadow: #c6c1c1;
+        min-width: 450px;
+
+    }
 .quyenloi{
     margin-top: 500px;
     padding: 30px 30px 20px 30px;
@@ -38,7 +34,6 @@ body{
 }
 #form-right{
      border: solid 1px #777; 
-    /* box-shadow: 0px 0px 17px 2px #7f7b7b; */
     min-width: 450px;
 }
 .head{
@@ -114,17 +109,17 @@ body{
 #remember:hover{
     color: #2a88c7;
 }
-input{
+.wrapper input{
     width: 100%;
     outline: none;
     border:solid 1px #d7d4d4;
     padding: 5px 5px 5px 5px;
     height:30px;
 }
-hr{
+.wrapper hr{
     width: 50%;
 }
-button{
+.wrapper button{
     width: 100%;
     border: none;
     background: #2691d9;
@@ -136,7 +131,7 @@ button{
     cursor: pointer;
     height:30px;
 }
-button:hover{
+#wrapper button:hover{
     background-color: #2a88c7;
 }
 #baomat{
@@ -145,7 +140,7 @@ button:hover{
     margin-bottom: 10px;
     text-align: center;
 }
-#footer{
+#footer1{
     display: flex;
     clear: both;
     border: none;
@@ -182,4 +177,4 @@ span:hover{
 }
 .spanemail span{
     color: red;
-}
+} 

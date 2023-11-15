@@ -3,56 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/WebDeAn/Account/css.css">
-    <link rel="stylesheet" href="/WebDeAn/Content/assets/css/style.css">
-    <link rel="stylesheet" href="/WebDeAn/Content/assets/css/style2.css">
-    <link rel="stylesheet" href="/WebDeAn/Content/assets/css/style3.css">
-    <link rel="stylesheet" href="/WebDeAn/Content/assets/css/base.css">
+    <link rel="stylesheet" href="/Account/css.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="/Content/assets/css/base.css">
+    <link rel="stylesheet" href="/Content/assets/css/style.css">
+    <link rel="stylesheet" href="/Content/assets/css/style2.css">
     <title>TaiKhoan</title>
 </head>
 <body>
     <header class="header">
-            <div id="contact">
-                <p><i>Liên hệ với chúng tôi</i></p>
+        <div id="contact">
+            <p><i>Liên hệ với chúng tôi</i></p>
+        </div>
+        <div class="logo"><img src="/Content/assets/img/logo.jpg" alt="All you need"></div>
+        <form>
+            <div id="timkiem">
+                <input id="tk" type="text" placeholder="Bạn cần tìm gì? ">
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
             </div>
-            <div class="logo"><img src="/WebDeAn/Content/assets/img/logo.jpg" alt="All you need"></div>
-            <form>
-                <div id="timkiem">
-                    <input id="tk" type="text" placeholder="Bạn cần tìm gì? ">
-                    <button type="submit">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
+        </form>
+        <div class="select">
+            <i class="fa-solid fa-cart-shopping">
+                <div class="giohang">
+                    <p><b>Đăng nhập</b> để xem giỏ hàng</p>
+                    <input type="submit" value="Đăng nhập" style="cursor: pointer" onclick="MoveToLogIn()">
                 </div>
-            </form>
-            <div class="select">
-                <i class="fa-solid fa-cart-shopping">
-                    <div class="giohang">
-                        <p><b>Đăng nhập</b> để xem giỏ hàng</p>
-                        <input type="submit" value="Đăng nhập" style="cursor: pointer" onclick="MoveToLogIn()">
-                    </div>
-                </i>
+            </i>
 
-                <i class="fa-solid fa-bell">
-                    <div class="thongbao">
-                        <p><b>Đăng nhập</b> để xem thông báo</p>
-                        <input type="submit" value="Đăng nhập" style="cursor: pointer" onclick="MoveToLogIn()"">
-                    </div>
-                </i>
+            <i class="fa-solid fa-bell">
+                <div class="thongbao">
+                    <p><b>Đăng nhập</b> để xem thông báo</p>
+                    <input type="submit" value="Đăng nhập" style="cursor: pointer" onclick="MoveToLogIn()"">
+                </div>
+            </i>
 
-                <i class="fa-solid fa-user-large">
-                    <div class="taikhoan">
-                        <input type="submit" value="Đăng kí" style="cursor: pointer" onclick="MoveToSignUp()">
-                        <hr width="50%" size="2px" color="#b0a9a9" />
-                        <input type="submit" value="Đăng nhập" style="cursor: pointer" onclick="MoveToLogIn()">
-                    </div>
-                </i>
-                <!--<div class="select_thugon">
-                  <button><i class="fas fa-bars"></i></button>
-                </div>-->
-            </div>
-        </header>
-        <div class="modal__overlay"></div>
+            <i class="fa-solid fa-user-large">
+                <div class="taikhoan">
+                    <input type="submit" value="Đăng kí" style="cursor: pointer" onclick="MoveToSignUp()">
+                    <hr width="50%" size="2px" color="#b0a9a9" />
+                    <input type="submit" value="Đăng nhập" style="cursor: pointer" onclick="MoveToLogIn()">
+                </div>
+            </i>
+            <!--<div class="select_thugon">
+              <button><i class="fas fa-bars"></i></button>
+            </div>-->
+        </div>
+    </header>
+    <div class="modal__overlay"></div>
         <nav class="content__navbar">
             <div class="menu">
                 <h3 class="menu__heading">
@@ -191,7 +191,7 @@
             </div>
 
             <div class="content__navbar-item">
-                <a href="#" class="content__navbar-item-link">Trang Chủ</a>
+                <a href="/Content/html/index.html" class="content__navbar-item-link">Trang Chủ</a>
             </div>
             <div class="content__navbar-item">
                 <a href="#" class="content__navbar-item-link">Giới thiệu</a>
@@ -200,10 +200,9 @@
                 <a href="#" class="content__navbar-item-link">Liên hệ</a>
             </div>
             <div class="content__navbar-item">
-                <a href="/WebDeAn/DatHang/DatHang.html" class="content__navbar-item-link">Đặt hàng</a>
+                <a href="/DatHang/DatHang.html" class="content__navbar-item-link">Đặt hàng</a>
             </div>
         </nav>
-
     <div class="wrapper">
         <div id="form-left" >
             <div class="quyenloi">
@@ -212,185 +211,185 @@
                 <p>Theo dõi chi tiết đơn hàng, địa chỉ thanh toán dễ dàng </p>
                 <p>Nhận nhiều chương trình ưu đãi hấp dẫn từ chúng tôi</p>
             </div>
-           
         </div>
         <div id="form-right">
-        <div class="head">
-            <div id="left" onclick="hienthidangnhap()">Đăng nhập</div>
-            <div id="right" onclick="hienthidangky()">Đăng ký</div>
-        </div>
-        <form action="" id="dangnhap" >
-            <div class="content">
-                <div class="contentmail">
-                    <div class="contentmail indam">EMAIL<span>*</span></div>
-                    <input type="text" name="tendn" id="email" placeholder="Nhập Địa chỉ Email" onkeypress="keypress()">
-                    <div id="hienthitbemail"></div>
-                </div>
-                <div class="contentpassword">
-                    <div class="contentmail indam">MẬT KHẨU<span>*</span></div>
-                    <input type="password" name="matkhau" id="password" placeholder="Nhập Mật khẩu" onkeypress="keypress1()">
-                    <div id="hienthitbmk"></div>
-                </div>
+            <div class="head">
+                <div id="left" onclick="hienthidangnhap()">Đăng nhập</div>
+                <div id="right" onclick="hienthidangky()">Đăng ký</div>
             </div>
-            <div id="remember" onclick="hienthiremember()">Quên mật khẩu?</div>
-            <button type="button" onclick="ktdn()">ĐĂNG NHẬP</button>
-            <div id="baomat">
-             Evo Office cam kết bảo mật và sẽ không bao giờ đăng
-                hay chia sẻ thông tin mà chưa có được sự đồng ý của bạn. 
+            <form action="" id="dangnhap" >
+                <div class="content">
+                    <div class="contentmail">
+                        <div class="contentmail indam">EMAIL<span>*</span></div>
+                        <input type="text" name="tendn" id="email" placeholder="Nhập Địa chỉ Email" onkeypress="keypress()">
+                        <div id="hienthitbemail"></div>
+                    </div>
+                    <div class="contentpassword">
+                        <div class="contentmail indam">MẬT KHẨU<span>*</span></div>
+                        <input type="password" name="matkhau" id="password" placeholder="Nhập Mật khẩu" onkeypress="keypress1()">
+                        <div id="hienthitbmk"></div>
+                    </div>
+                </div>
+                <div id="remember" onclick="hienthiremember()">Quên mật khẩu?</div>
+                <button type="button" onclick="ktdn()">ĐĂNG NHẬP</button>
+                <div id="baomat">
+                Evo Office cam kết bảo mật và sẽ không bao giờ đăng
+                    hay chia sẻ thông tin mà chưa có được sự đồng ý của bạn. 
+                </div>
+            </form>
+            <form action="" id="dangky">
+                <div>
+                    <div class="ho">
+                        <div>HỌ<span>*</span></div>
+                        <input type="text" name="ho" id="fisrtname" placeholder="Nhập họ" onkeypress="keypress2()">
+                        <div id="hienthitbho"></div>
+                    </div>
+                    <div class="ten">
+                        <div>TÊN<span>*</span></div>
+                        <input type="text" name="ten" id="lastname" placeholder="Nhập tên" onkeypress="keypress3()">
+                        <div id="hienthitbten"></div>
+                    </div>
+                    <div class="ten">
+                        <div>SỐ ĐIỆN THOẠI<span>*</span></div>
+                        <input type="text" name="sodt" id="phone" placeholder="Nhập số điện thoại" onkeypress="keypress4()">
+                        <div id="hienthitbphone"></div>
+                    </div>
+                    <div class="ten">
+                        <div>EMAIL<span>*</span></div>
+                        <input type="text" name="e" id="email" placeholder="Nhập địa chỉ email" onkeypress="keypress1()">
+                        <div id="hienthitbemail"></div>
+                    </div>
+                    <div class="ten" >
+                        <div>MẬT KHẨU<span>*</span></div>
+                        <input type="password" name="matkhau" id="password" placeholder="Nhập mật khẩu">
+                        <div id="hienthitbmk"></div>
+                    </div>
+                    <div class="ten">
+                        <div>MẬT KHẨU<span>*</span></div>
+                        <input type="password" name="matkhau" id="password" placeholder="Nhập lại mật khẩu">
+                    </div>
+                </div>
+                <button type="button" onclick="ktdk()">TẠO TÀI KHOẢN</button>
+            </form>
+            <form action="" id="form-remember">
+                <div class="quenmk">
+                    Bạn quên mật khẩu? Nhập địa chỉ email để lấy lại mật khẩu qua email.
+                </div>
+                <div class="spanemail">EMAIL<span>*</span></div>
+                <div><input type="text" name="" id="email" placeholder="Nhập địa chỉ Email"></div>
+                <button type="button">LẤY LẠI MẬT KHẨU</button>
+                <p class="quaylai">QUAY LẠI <span onclick="hienthitaiday()"> TẠI ĐÂY</span></p>
+            </form>
+            <div class="line">
+                <span>Hoặc đăng nhập qua</span>
             </div>
-        </form>
-        <form action="" id="dangky">
-            <div>
-                <div class="ho">
-                    <div>HỌ<span>*</span></div>
-                    <input type="text" name="ho" id="fisrtname" placeholder="Nhập họ" onkeypress="keypress2()">
-                    <div id="hienthitbho"></div>
+            <div id="footer1">
+                <div id="fleft"><img width="129px" height="37px" src="fb-btn.jpg" alt="">
                 </div>
-                <div class="ten">
-                    <div>TÊN<span>*</span></div>
-                    <input type="text" name="ten" id="lastname" placeholder="Nhập tên" onkeypress="keypress3()">
-                    <div id="hienthitbten"></div>
-                </div>
-                <div class="ten">
-                    <div>SỐ ĐIỆN THOẠI<span>*</span></div>
-                    <input type="text" name="sodt" id="phone" placeholder="Nhập số điện thoại" onkeypress="keypress4()">
-                    <div id="hienthitbphone"></div>
-                </div>
-                <div class="ten">
-                    <div>EMAIL<span>*</span></div>
-                    <input type="text" name="e" id="email" placeholder="Nhập địa chỉ email" onkeypress="keypress1()">
-                    <div id="hienthitbemail"></div>
-                </div>
-                <div class="ten" >
-                    <div>MẬT KHẨU<span>*</span></div>
-                    <input type="password" name="matkhau" id="password" placeholder="Nhập mật khẩu">
-                    <div id="hienthitbmk"></div>
-                </div>
-                <div class="ten">
-                    <div>MẬT KHẨU<span>*</span></div>
-                    <input type="password" name="matkhau" id="password" placeholder="Nhập lại mật khẩu">
-                </div>
+                <div id="fright"><img width="129px" height="37px" src="gp-btn.jpg" alt="">
             </div>
-            <button type="button" onclick="ktdk()">TẠO TÀI KHOẢN</button>
-        </form>
-        <form action="" id="form-remember">
-            <div class="quenmk">
-                Bạn quên mật khẩu? Nhập địa chỉ email để lấy lại mật khẩu qua email.
-            </div>
-            <div class="spanemail">EMAIL<span>*</span></div>
-            <div><input type="text" name="" id="email" placeholder="Nhập địa chỉ Email"></div>
-            <button type="button">LẤY LẠI MẬT KHẨU</button>
-            <p class="quaylai">QUAY LẠI <span onclick="hienthitaiday()"> TẠI ĐÂY</span></p>
-        </form>
-        <div class="line">
-            <span>Hoặc đăng nhập qua</span>
-        </div>
-        <div id="footer">
-            <div id="fleft"><img width="129px" height="37px" src="/WebDeAn/Account/fb-btn.jpg" alt="">
-            </div>
-            <div id="fright"><img width="129px" height="37px" src="/WebDeAn/Account/gp-btn.jpg" alt="">
-        </div>
         </div>
         
     </div>
-        <footer class="footer">
-            <div class="footer__heading">
-                <div class="footer__heading-social">
-                    <i class="footer__heading-social-icon fa-brands fa-facebook-f"></i>
-                    <i class="footer__heading-social-name">Facebook</i>
-                </div>
-                <div class="footer__heading-social">
-                    <i class="footer__heading-social-icon fa-brands fa-x-twitter"></i>
-                    <i class="footer__heading-social-name">X-Twitter</i>
-                </div>
-                <div class="footer__heading-social">
-                    <i class="footer__heading-social-icon fa-brands fa-youtube"></i>
-                    <i class="footer__heading-social-name">Youtube</i>
-                </div>
-                <div class="footer__heading-social">
-                    <i class="footer__heading-social-icon fa-brands fa-instagram"></i>
-                    <i class="footer__heading-social-name">Instagram</i>
-                </div>
+</div>
+    <div class="footer">
+        <div class="footer__heading">
+            <div class="footer__heading-social">
+                <i class="footer__heading-social-icon fa-brands fa-facebook-f"></i>
+                <i class="footer__heading-social-name">Facebook</i>
             </div>
-            <div class="grid">
-                <div class="grid__row footer__row">
-                    <div class="grid__column-2-4 ">
-                        <h3 class="footer__title">THÔNG TIN CÔNG TY</h3>
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <a href="/" class="footer__item-link">Trang chủ</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__item-link">Giới thiệu</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__item-link">Liên hệ</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__item-link">Đặt hàng</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="grid__column-2-4">
-                        <h3 class="footer__title">CHÍNH SÁCH</h3>
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <a href="/" class="footer__item-link">Trang chủ</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__item-link">Giới thiệu</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__item-link">Liên hệ</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__item-link">Đặt hàng</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="grid__column-30 footer--center">
-                        <h3 class="footer__title">THÔNG TIN LIÊN HỆ</h3>
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <span class="footer__item-address">
-                                    Địa chỉ: 70 Lu Gia, Ward 15, District 11, Ho Chi Minh City
-                                </span>
-                            </li>
-                            <li class="footer__item">
-                                Email:
-                                <a href="#" class="footer__item-link">support@sapo.vn</a>
-                            </li>
-                            <li class="footer__item">
-                                Điện thoại:
-                                <a href="#" class="footer__item-link">1900 6750</a>
-                            </li>
-                            <li class="footer__item">
-                                Zalo:
-                                <a href="#" class="footer__item-link">1900 6750</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="grid__column-30">
-                        <div class="help-customer">
-                            <div class="time">
-                                <img src="/WebDeAn/Content/assets/img/time.jpg" alt="" class="time__img">
-                                <div class="help">
-                                    <span class="help__tittle">Hỗ trợ khách hàng</span>
-                                    <span class="help__description">Hỗ trợ 24/7</span>
-                                </div>
+            <div class="footer__heading-social">
+                <i class="footer__heading-social-icon fa-brands fa-x-twitter"></i>
+                <i class="footer__heading-social-name">X-Twitter</i>
+            </div>
+            <div class="footer__heading-social">
+                <i class="footer__heading-social-icon fa-brands fa-youtube"></i>
+                <i class="footer__heading-social-name">Youtube</i>
+            </div>
+            <div class="footer__heading-social">
+                <i class="footer__heading-social-icon fa-brands fa-instagram"></i>
+                <i class="footer__heading-social-name">Instagram</i>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="grid__row footer__row">
+                <div class="grid__column-2-4 ">
+                    <h3 class="footer__title">THÔNG TIN CÔNG TY</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="/" class="footer__item-link">Trang chủ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__item-link">Giới thiệu</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__item-link">Liên hệ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__item-link">Đặt hàng</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__column-2-4">
+                    <h3 class="footer__title">CHÍNH SÁCH</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="/" class="footer__item-link">Trang chủ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__item-link">Giới thiệu</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__item-link">Liên hệ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__item-link">Đặt hàng</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__column-30 footer--center">
+                    <h3 class="footer__title">THÔNG TIN LIÊN HỆ</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <span class="footer__item-address">
+                                Địa chỉ: 70 Lu Gia, Ward 15, District 11, Ho Chi Minh City
+                            </span>
+                        </li>
+                        <li class="footer__item">
+                            Email:
+                            <a href="#" class="footer__item-link">support@sapo.vn</a>
+                        </li>
+                        <li class="footer__item">
+                            Điện thoại:
+                            <a href="#" class="footer__item-link">1900 6750</a>
+                        </li>
+                        <li class="footer__item">
+                            Zalo:
+                            <a href="#" class="footer__item-link">1900 6750</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__column-30">
+                    <div class="help-customer">
+                        <div class="time">
+                            <img src="/Content/assets/img/time.jpg" alt="" class="time__img">
+                            <div class="help">
+                                <span class="help__tittle">Hỗ trợ khách hàng</span>
+                                <span class="help__description">Hỗ trợ 24/7</span>
                             </div>
-                            <div class="gift">
-                                <img src="/WebDeAn/Content/assets/img/gift.jpg" alt="" class="gift__img">
-                                <div class="help">
-                                    <span class="help__tittle">Giao hàng miễn phí</span>
-                                    <span class="help__description">Tất cả đơn hàng trên 200k</span>
-                                </div>
+                        </div>
+                        <div class="gift">
+                            <img src="/Content/assets/img/gift.jpg" alt="" class="gift__img">
+                            <div class="help">
+                                <span class="help__tittle">Giao hàng miễn phí</span>
+                                <span class="help__description">Tất cả đơn hàng trên 200k</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </div>
 </body>
-<script src="/WebDeAn/script.js"></script>
+<script src="script.js"></script>
 </html>
