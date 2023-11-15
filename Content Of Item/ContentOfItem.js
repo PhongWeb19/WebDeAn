@@ -1,7 +1,7 @@
 const ListInfoItems = [
 {
     id: 1,
-    img:"/Content/assets/img/product1.jpeg",
+    img:"/WebDeAn/Content/assets/img/product1.jpeg",
     name: "Bảng Vẽ Điện Tử Thông Minh Xóa Được Màn Hình LCD 8.5 Inch (Giao Màu Ngẫu Nhiên)",
     price_current: "84.000đ",
     brand_title:"Deli",
@@ -61,35 +61,35 @@ function ChangeToIntroduction(){
 }
 
 function ChangeImage1(){
-    document.getElementById("RelateItem1").src = "/Content Of Item/imgItems/cal 01s.webp";
+    document.getElementById("RelateItem1").src = "/WebDeAn/Content Of Item/imgItems/cal 01s.webp";
 }
 
 function RestoreImage1(){
-    document.getElementById("RelateItem1").src = "/Content Of Item/imgItems/cal 01s_2.webp";
+    document.getElementById("RelateItem1").src = "/WebDeAn/Content Of Item/imgItems/cal 01s_2.webp";
 }
 
 function ChangeImage2(){
-    document.getElementById("RelateItem2").src = "/Content Of Item/imgItems/BamKim_2.webp";
+    document.getElementById("RelateItem2").src = "/WebDeAn/Content Of Item/imgItems/BamKim_2.webp";
 }
 
 function RestoreImage2(){
-    document.getElementById("RelateItem2").src = "/Content Of Item/imgItems/BamKim_1.webp";
+    document.getElementById("RelateItem2").src = "/WebDeAn/Content Of Item/imgItems/BamKim_1.webp";
 }
 
 function ChangeImage3(){
-    document.getElementById("RelateItem3").src = "/Content Of Item/imgItems/Paper_2.webp";
+    document.getElementById("RelateItem3").src = "/WebDeAn/Content Of Item/imgItems/Paper_2.webp";
 }
 
 function RestoreImage3(){
-    document.getElementById("RelateItem3").src = "/Content Of Item/imgItems/Paper_1.webp";
+    document.getElementById("RelateItem3").src = "/WebDeAn/Content Of Item/imgItems/Paper_1.webp";
 }
 
 function ChangeImage4(){
-    document.getElementById("RelateItem4").src = "/Content Of Item/imgItems/Paper_Idea_2.webp";
+    document.getElementById("RelateItem4").src = "/WebDeAn/Content Of Item/imgItems/Paper_Idea_2.webp";
 }
 
 function RestoreImage4(){
-    document.getElementById("RelateItem4").src = "/Content Of Item/imgItems/Paper_Idea_1.webp";
+    document.getElementById("RelateItem4").src = "/WebDeAn/Content Of Item/imgItems/Paper_Idea_1.webp";
 }
 
 function ShowMore()
@@ -176,7 +176,7 @@ function HandleInterfaceItem(nameParam)
                     
                     <div id = "InfotoContact">
                         <div><h4>CHÚNG TÔI LUÔN SẴN SÀNG ĐỂ GIÚP ĐỠ BẠN</h4></div>
-                        <div id = "ImageContact"><img src="/Content Of Item/imgItems/ho tro.webp" alt=""></div>
+                        <div id = "ImageContact"><img src="/WebDeAn/Content Of Item/imgItems/ho tro.webp" alt=""></div>
                         <div><h4>Để được hỗ trợ tốt nhất. Hãy gọi</h4></div>
                         <div id = "PhoneNumber"><h1>1900 9999</h1></div>
                         <div><h4>-----Hoặc-----</h4></div>
