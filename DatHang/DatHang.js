@@ -7,12 +7,12 @@ const listPage = document.getElementById('listPage');
 const BuyBtn = document.getElementById('BuyBtn');
 const ListProducts=[];
 const products = [
-    {id: 1,img: "https://phongweb19.github.io/WebDeAn/imgProducts/hinh1.jpg", Name: "Máy tính Flexoffice FLEXIO CAL-01S - Tím",cost: '170.000'},
-    {id: 2,img: "https://phongweb19.github.io/WebDeAn/imgProducts/hinh2.jpg", Name: "Máy tính khoa học Flexoffice FLEXIO Fx590VN - Tím",cost: '382.000'},
-    {id: 3,img: "https://phongweb19.github.io/WebDeAn/imgProducts/hinh3.jpg", Name: "Dao rọc giấy Flexoffice FO-KN02B",cost: '12.000'},
-    {id: 4,img: "https://phongweb19.github.io/WebDeAn/imgProducts/hinh4.jpg", Name: "Bộ bấm kim số 10 và kim bấm Flexoffice FO-ST02-S2",cost: '30.000'},
-    {id: 5,img: "https://phongweb19.github.io/WebDeAn/imgProducts/hinh5.jpg", Name: "Giấy Paper One A3/70 PP-O06",cost: '140.000'},
-    {id: 6,img: "https://phongweb19.github.io/WebDeAn/imgProducts/hinh6.jpg", Name: "Giấy Idea A4/70 PP-ID1",cost: '71.000'},
+    {id: 1,img: "/WebDeAn/imgProducts/hinh1.jpg", Name: "Máy tính Flexoffice FLEXIO CAL-01S - Tím",cost: '170.000'},
+    {id: 2,img: "/WebDeAn/imgProducts/hinh2.jpg", Name: "Máy tính khoa học Flexoffice FLEXIO Fx590VN - Tím",cost: '382.000'},
+    {id: 3,img: "/WebDeAn/imgProducts/hinh3.jpg", Name: "Dao rọc giấy Flexoffice FO-KN02B",cost: '12.000'},
+    {id: 4,img: "/WebDeAn/imgProducts/hinh4.jpg", Name: "Bộ bấm kim số 10 và kim bấm Flexoffice FO-ST02-S2",cost: '30.000'},
+    {id: 5,img: "/WebDeAn/imgProducts/hinh5.jpg", Name: "Giấy Paper One A3/70 PP-O06",cost: '140.000'},
+    {id: 6,img: "/WebDeAn/imgProducts/hinh6.jpg", Name: "Giấy Idea A4/70 PP-ID1",cost: '71.000'},
 ]
 
 var perPage = 5;
@@ -168,7 +168,7 @@ function BuyProducts()
     });   
     console.log(ListProducts);
     localStorage.setItem('ListProducts',JSON.stringify(ListProducts));
-    window.location.href='/GioHang/GioHang.html';
+    window.location.href='/WebDeAn/GioHang/GioHang.html';
 }
 
 function ModalOverLay()
