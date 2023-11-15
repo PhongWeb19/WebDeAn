@@ -223,6 +223,18 @@ function RemoveItems(id)
     });
     localStorage.setItem('ListProducts',JSON.stringify(NewListProducts));   
 }
+
+function MoveToSignUp()
+{
+  window.location.href="/WebDeAn/Account/demotk.html";
+}
+
+function MoveToLogIn()
+{
+  window.location.href="/WebDeAn/Account/demotk.html";
+}
+
+
 function start()
 {
     renderProducts();
