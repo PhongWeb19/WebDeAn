@@ -6,12 +6,12 @@ var countItems;
 var btnsCount;
 var btnsRemove;
 const products = [
-    {id: 1,img: "/WebDeAn/imgProducts/hinh1.jpg", Name: "Máy tính Flexoffice FLEXIO CAL-01S - Tím",cost: '170.000'},
-    {id: 2,img: "/WebDeAn/imgProducts/hinh2.jpg", Name: "Máy tính khoa học Flexoffice FLEXIO Fx590VN - Tím",cost: '382.000'},
-    {id: 3,img: "/WebDeAn/imgProducts/hinh3.jpg", Name: "Dao rọc giấy Flexoffice FO-KN02B",cost: '12.000'},
-    {id: 4,img: "/WebDeAn/imgProducts/hinh4.jpg", Name: "Bộ bấm kim số 10 và kim bấm Flexoffice FO-ST02-S2",cost: '30.000'},
-    {id: 5,img: "/WebDeAn/imgProducts/hinh5.jpg", Name: "Giấy Paper One A3/70 PP-O06",cost: '140.000'},
-    {id: 6,img: "/WebDeAn/imgProducts/hinh6.jpg", Name: "Giấy Idea A4/70 PP-ID1",cost: '71.000'},
+    {id: 1,img: "/imgProducts/hinh1.jpg", Name: "Máy tính Flexoffice FLEXIO CAL-01S - Tím",cost: '170.000'},
+    {id: 2,img: "/imgProducts/hinh2.jpg", Name: "Máy tính khoa học Flexoffice FLEXIO Fx590VN - Tím",cost: '382.000'},
+    {id: 3,img: "/imgProducts/hinh3.jpg", Name: "Dao rọc giấy Flexoffice FO-KN02B",cost: '12.000'},
+    {id: 4,img: "/imgProducts/hinh4.jpg", Name: "Bộ bấm kim số 10 và kim bấm Flexoffice FO-ST02-S2",cost: '30.000'},
+    {id: 5,img: "/imgProducts/hinh5.jpg", Name: "Giấy Paper One A3/70 PP-O06",cost: '140.000'},
+    {id: 6,img: "/imgProducts/hinh6.jpg", Name: "Giấy Idea A4/70 PP-ID1",cost: '71.000'},
 ]
 localStorage.setItem('Products',JSON.stringify(products));
 var tong = 0;
@@ -65,7 +65,7 @@ function renderProducts()
             
             <div id="costProducts">
                 <div id="costLeft">
-                    <span><a href="/WebDeAn/Content/html/index.html">Tiếp tục mua hàng</a></span>
+                    <span><a href="/Content/html/index.html">Tiếp tục mua hàng</a></span>
                 </div>
                 <div id="costright">
                     <div id="TamTinh">
@@ -187,7 +187,7 @@ function HandleClickContinueBuy()
 {
     continues.onclick = function()
     {
-        window.location.href='/WebDeAn/DatHang/DatHang.html';
+        window.location.href='/DatHang/DatHang.html';
     }
 }
 
@@ -223,18 +223,6 @@ function RemoveItems(id)
     });
     localStorage.setItem('ListProducts',JSON.stringify(NewListProducts));   
 }
-
-function MoveToSignUp()
-{
-  window.location.href="/WebDeAn/Account/demotk.html";
-}
-
-function MoveToLogIn()
-{
-  window.location.href="/WebDeAn/Account/demotk.html";
-}
-
-
 function start()
 {
     renderProducts();
